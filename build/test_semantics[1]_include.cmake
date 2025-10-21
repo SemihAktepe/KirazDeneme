@@ -1,0 +1,5 @@
+if(EXISTS "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/test_semantics[1]_tests.cmake")
+  include("/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/test_semantics[1]_tests.cmake")
+else()
+  add_test(test_semantics_NOT_BUILT test_semantics_NOT_BUILT)
+endif()

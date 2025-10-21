@@ -1,0 +1,848 @@
+[
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/apply-names.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/apply-names.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/apply-names.cc",
+  "output": "CMakeFiles/wabt.dir/src/apply-names.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binary-reader-ir.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-ir.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-ir.cc",
+  "output": "CMakeFiles/wabt.dir/src/binary-reader-ir.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binary-reader-logging.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-logging.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-logging.cc",
+  "output": "CMakeFiles/wabt.dir/src/binary-reader-logging.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binary-reader.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader.cc",
+  "output": "CMakeFiles/wabt.dir/src/binary-reader.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binary-writer-spec.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer-spec.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer-spec.cc",
+  "output": "CMakeFiles/wabt.dir/src/binary-writer-spec.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binary-writer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer.cc",
+  "output": "CMakeFiles/wabt.dir/src/binary-writer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binary.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary.cc",
+  "output": "CMakeFiles/wabt.dir/src/binary.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/binding-hash.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binding-hash.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binding-hash.cc",
+  "output": "CMakeFiles/wabt.dir/src/binding-hash.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/color.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/color.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/color.cc",
+  "output": "CMakeFiles/wabt.dir/src/color.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/common.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/common.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/common.cc",
+  "output": "CMakeFiles/wabt.dir/src/common.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/config.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/config.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/config.cc",
+  "output": "CMakeFiles/wabt.dir/src/config.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/decompiler.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/decompiler.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/decompiler.cc",
+  "output": "CMakeFiles/wabt.dir/src/decompiler.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/error-formatter.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/error-formatter.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/error-formatter.cc",
+  "output": "CMakeFiles/wabt.dir/src/error-formatter.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/expr-visitor.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/expr-visitor.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/expr-visitor.cc",
+  "output": "CMakeFiles/wabt.dir/src/expr-visitor.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/feature.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/feature.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/feature.cc",
+  "output": "CMakeFiles/wabt.dir/src/feature.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/filenames.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/filenames.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/filenames.cc",
+  "output": "CMakeFiles/wabt.dir/src/filenames.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/generate-names.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/generate-names.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/generate-names.cc",
+  "output": "CMakeFiles/wabt.dir/src/generate-names.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/ir-util.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir-util.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir-util.cc",
+  "output": "CMakeFiles/wabt.dir/src/ir-util.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/ir.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir.cc",
+  "output": "CMakeFiles/wabt.dir/src/ir.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/leb128.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/leb128.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/leb128.cc",
+  "output": "CMakeFiles/wabt.dir/src/leb128.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/lexer-source-line-finder.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source-line-finder.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source-line-finder.cc",
+  "output": "CMakeFiles/wabt.dir/src/lexer-source-line-finder.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/lexer-source.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source.cc",
+  "output": "CMakeFiles/wabt.dir/src/lexer-source.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/literal.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/literal.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/literal.cc",
+  "output": "CMakeFiles/wabt.dir/src/literal.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/opcode-code-table.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode-code-table.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode-code-table.c",
+  "output": "CMakeFiles/wabt.dir/src/opcode-code-table.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/opcode.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode.cc",
+  "output": "CMakeFiles/wabt.dir/src/opcode.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/option-parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/option-parser.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/option-parser.cc",
+  "output": "CMakeFiles/wabt.dir/src/option-parser.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/resolve-names.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/resolve-names.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/resolve-names.cc",
+  "output": "CMakeFiles/wabt.dir/src/resolve-names.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/sha256.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/sha256.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/sha256.cc",
+  "output": "CMakeFiles/wabt.dir/src/sha256.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/shared-validator.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/shared-validator.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/shared-validator.cc",
+  "output": "CMakeFiles/wabt.dir/src/shared-validator.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/stream.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/stream.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/stream.cc",
+  "output": "CMakeFiles/wabt.dir/src/stream.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/token.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/token.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/token.cc",
+  "output": "CMakeFiles/wabt.dir/src/token.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/tracing.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tracing.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tracing.cc",
+  "output": "CMakeFiles/wabt.dir/src/tracing.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/type-checker.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/type-checker.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/type-checker.cc",
+  "output": "CMakeFiles/wabt.dir/src/type-checker.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/utf8.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/utf8.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/utf8.cc",
+  "output": "CMakeFiles/wabt.dir/src/utf8.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/validator.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/validator.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/validator.cc",
+  "output": "CMakeFiles/wabt.dir/src/validator.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/wast-lexer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-lexer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-lexer.cc",
+  "output": "CMakeFiles/wabt.dir/src/wast-lexer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/wast-parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-parser.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-parser.cc",
+  "output": "CMakeFiles/wabt.dir/src/wast-parser.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/wat-writer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wat-writer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wat-writer.cc",
+  "output": "CMakeFiles/wabt.dir/src/wat-writer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/c-writer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/c-writer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/c-writer.cc",
+  "output": "CMakeFiles/wabt.dir/src/c-writer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/prebuilt/wasm2c_header_top.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_top.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_top.cc",
+  "output": "CMakeFiles/wabt.dir/src/prebuilt/wasm2c_header_top.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/prebuilt/wasm2c_header_bottom.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_bottom.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_bottom.cc",
+  "output": "CMakeFiles/wabt.dir/src/prebuilt/wasm2c_header_bottom.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/prebuilt/wasm2c_source_includes.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_includes.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_includes.cc",
+  "output": "CMakeFiles/wabt.dir/src/prebuilt/wasm2c_source_includes.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/prebuilt/wasm2c_source_declarations.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_declarations.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_declarations.cc",
+  "output": "CMakeFiles/wabt.dir/src/prebuilt/wasm2c_source_declarations.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/prebuilt/wasm2c_simd_source_declarations.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_simd_source_declarations.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_simd_source_declarations.cc",
+  "output": "CMakeFiles/wabt.dir/src/prebuilt/wasm2c_simd_source_declarations.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/prebuilt/wasm2c_atomicops_source_declarations.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_atomicops_source_declarations.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_atomicops_source_declarations.cc",
+  "output": "CMakeFiles/wabt.dir/src/prebuilt/wasm2c_atomicops_source_declarations.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/interp/binary-reader-interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/binary-reader-interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/binary-reader-interp.cc",
+  "output": "CMakeFiles/wabt.dir/src/interp/binary-reader-interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/interp/interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp.cc",
+  "output": "CMakeFiles/wabt.dir/src/interp/interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/interp/interp-util.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp-util.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp-util.cc",
+  "output": "CMakeFiles/wabt.dir/src/interp/interp-util.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt.dir/src/interp/istream.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/istream.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/istream.cc",
+  "output": "CMakeFiles/wabt.dir/src/interp/istream.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wat2wasm.dir/src/tools/wat2wasm.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wat2wasm.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wat2wasm.cc",
+  "output": "CMakeFiles/wat2wasm.dir/src/tools/wat2wasm.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wast2json.dir/src/tools/wast2json.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wast2json.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wast2json.cc",
+  "output": "CMakeFiles/wast2json.dir/src/tools/wast2json.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm2wat.dir/src/tools/wasm2wat.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm2wat.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm2wat.cc",
+  "output": "CMakeFiles/wasm2wat.dir/src/tools/wasm2wat.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm2c.dir/src/tools/wasm2c.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm2c.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm2c.cc",
+  "output": "CMakeFiles/wasm2c.dir/src/tools/wasm2c.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-stats.dir/src/tools/wasm-stats.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-stats.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-stats.cc",
+  "output": "CMakeFiles/wasm-stats.dir/src/tools/wasm-stats.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-stats.dir/src/binary-reader-stats.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-stats.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-stats.cc",
+  "output": "CMakeFiles/wasm-stats.dir/src/binary-reader-stats.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-objdump.dir/src/tools/wasm-objdump.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-objdump.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-objdump.cc",
+  "output": "CMakeFiles/wasm-objdump.dir/src/tools/wasm-objdump.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-objdump.dir/src/binary-reader-objdump.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-objdump.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-objdump.cc",
+  "output": "CMakeFiles/wasm-objdump.dir/src/binary-reader-objdump.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-interp.dir/src/tools/wasm-interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-interp.cc",
+  "output": "CMakeFiles/wasm-interp.dir/src/tools/wasm-interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/spectest-interp.dir/src/tools/spectest-interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/spectest-interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/spectest-interp.cc",
+  "output": "CMakeFiles/spectest-interp.dir/src/tools/spectest-interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wat-desugar.dir/src/tools/wat-desugar.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wat-desugar.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wat-desugar.cc",
+  "output": "CMakeFiles/wat-desugar.dir/src/tools/wat-desugar.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-validate.dir/src/tools/wasm-validate.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-validate.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-validate.cc",
+  "output": "CMakeFiles/wasm-validate.dir/src/tools/wasm-validate.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-strip.dir/src/tools/wasm-strip.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-strip.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-strip.cc",
+  "output": "CMakeFiles/wasm-strip.dir/src/tools/wasm-strip.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-decompile.dir/src/tools/wasm-decompile.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-decompile.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tools/wasm-decompile.cc",
+  "output": "CMakeFiles/wasm-decompile.dir/src/tools/wasm-decompile.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-maybe-uninitialized -o CMakeFiles/gtest.dir/third_party/gtest/googletest/src/gtest-all.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/src/gtest-all.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/src/gtest-all.cc",
+  "output": "CMakeFiles/gtest.dir/third_party/gtest/googletest/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/gtest_main.dir/third_party/gtest/googletest/src/gtest_main.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/src/gtest_main.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/src/gtest_main.cc",
+  "output": "CMakeFiles/gtest_main.dir/third_party/gtest/googletest/src/gtest_main.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/hexfloat_test.dir/src/literal.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/literal.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/literal.cc",
+  "output": "CMakeFiles/hexfloat_test.dir/src/literal.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/hexfloat_test.dir/src/test-hexfloat.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-hexfloat.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-hexfloat.cc",
+  "output": "CMakeFiles/hexfloat_test.dir/src/test-hexfloat.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-binary-reader.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-binary-reader.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-binary-reader.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-binary-reader.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-interp.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-intrusive-list.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-intrusive-list.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-intrusive-list.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-intrusive-list.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-literal.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-literal.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-literal.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-literal.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-option-parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-option-parser.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-option-parser.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-option-parser.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-filenames.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-filenames.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-filenames.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-filenames.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-utf8.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-utf8.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-utf8.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-utf8.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wabt-unittests.dir/src/test-wast-parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-wast-parser.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/test-wast-parser.cc",
+  "output": "CMakeFiles/wabt-unittests.dir/src/test-wast-parser.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-rt-impl.dir/wasm2c/wasm-rt-impl.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/wasm2c/wasm-rt-impl.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/wasm2c/wasm-rt-impl.c",
+  "output": "CMakeFiles/wasm-rt-impl.dir/wasm2c/wasm-rt-impl.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-rt-impl.dir/wasm2c/wasm-rt-exceptions-impl.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/wasm2c/wasm-rt-exceptions-impl.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/wasm2c/wasm-rt-exceptions-impl.c",
+  "output": "CMakeFiles/wasm-rt-impl.dir/wasm2c/wasm-rt-exceptions-impl.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm-rt-impl.dir/wasm2c/wasm-rt-mem-impl.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/wasm2c/wasm-rt-mem-impl.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/wasm2c/wasm-rt-mem-impl.c",
+  "output": "CMakeFiles/wasm-rt-impl.dir/wasm2c/wasm-rt-mem-impl.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/apply-names.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/apply-names.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/apply-names.cc",
+  "output": "CMakeFiles/wasm.dir/src/apply-names.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binary-reader-ir.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-ir.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-ir.cc",
+  "output": "CMakeFiles/wasm.dir/src/binary-reader-ir.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binary-reader-logging.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-logging.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader-logging.cc",
+  "output": "CMakeFiles/wasm.dir/src/binary-reader-logging.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binary-reader.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-reader.cc",
+  "output": "CMakeFiles/wasm.dir/src/binary-reader.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binary-writer-spec.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer-spec.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer-spec.cc",
+  "output": "CMakeFiles/wasm.dir/src/binary-writer-spec.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binary-writer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary-writer.cc",
+  "output": "CMakeFiles/wasm.dir/src/binary-writer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binary.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binary.cc",
+  "output": "CMakeFiles/wasm.dir/src/binary.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/binding-hash.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binding-hash.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/binding-hash.cc",
+  "output": "CMakeFiles/wasm.dir/src/binding-hash.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/color.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/color.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/color.cc",
+  "output": "CMakeFiles/wasm.dir/src/color.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/common.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/common.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/common.cc",
+  "output": "CMakeFiles/wasm.dir/src/common.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/config.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/config.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/config.cc",
+  "output": "CMakeFiles/wasm.dir/src/config.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/decompiler.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/decompiler.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/decompiler.cc",
+  "output": "CMakeFiles/wasm.dir/src/decompiler.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/error-formatter.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/error-formatter.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/error-formatter.cc",
+  "output": "CMakeFiles/wasm.dir/src/error-formatter.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/expr-visitor.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/expr-visitor.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/expr-visitor.cc",
+  "output": "CMakeFiles/wasm.dir/src/expr-visitor.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/feature.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/feature.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/feature.cc",
+  "output": "CMakeFiles/wasm.dir/src/feature.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/filenames.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/filenames.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/filenames.cc",
+  "output": "CMakeFiles/wasm.dir/src/filenames.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/generate-names.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/generate-names.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/generate-names.cc",
+  "output": "CMakeFiles/wasm.dir/src/generate-names.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/ir-util.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir-util.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir-util.cc",
+  "output": "CMakeFiles/wasm.dir/src/ir-util.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/ir.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/ir.cc",
+  "output": "CMakeFiles/wasm.dir/src/ir.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/leb128.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/leb128.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/leb128.cc",
+  "output": "CMakeFiles/wasm.dir/src/leb128.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/lexer-source-line-finder.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source-line-finder.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source-line-finder.cc",
+  "output": "CMakeFiles/wasm.dir/src/lexer-source-line-finder.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/lexer-source.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/lexer-source.cc",
+  "output": "CMakeFiles/wasm.dir/src/lexer-source.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/literal.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/literal.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/literal.cc",
+  "output": "CMakeFiles/wasm.dir/src/literal.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include -fPIC   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -o CMakeFiles/wasm.dir/src/opcode-code-table.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode-code-table.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode-code-table.c",
+  "output": "CMakeFiles/wasm.dir/src/opcode-code-table.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/opcode.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/opcode.cc",
+  "output": "CMakeFiles/wasm.dir/src/opcode.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/option-parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/option-parser.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/option-parser.cc",
+  "output": "CMakeFiles/wasm.dir/src/option-parser.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/resolve-names.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/resolve-names.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/resolve-names.cc",
+  "output": "CMakeFiles/wasm.dir/src/resolve-names.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/sha256.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/sha256.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/sha256.cc",
+  "output": "CMakeFiles/wasm.dir/src/sha256.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/shared-validator.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/shared-validator.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/shared-validator.cc",
+  "output": "CMakeFiles/wasm.dir/src/shared-validator.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/stream.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/stream.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/stream.cc",
+  "output": "CMakeFiles/wasm.dir/src/stream.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/token.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/token.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/token.cc",
+  "output": "CMakeFiles/wasm.dir/src/token.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/tracing.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tracing.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/tracing.cc",
+  "output": "CMakeFiles/wasm.dir/src/tracing.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/type-checker.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/type-checker.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/type-checker.cc",
+  "output": "CMakeFiles/wasm.dir/src/type-checker.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/utf8.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/utf8.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/utf8.cc",
+  "output": "CMakeFiles/wasm.dir/src/utf8.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/validator.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/validator.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/validator.cc",
+  "output": "CMakeFiles/wasm.dir/src/validator.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/wast-lexer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-lexer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-lexer.cc",
+  "output": "CMakeFiles/wasm.dir/src/wast-lexer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/wast-parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-parser.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wast-parser.cc",
+  "output": "CMakeFiles/wasm.dir/src/wast-parser.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/wat-writer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wat-writer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/wat-writer.cc",
+  "output": "CMakeFiles/wasm.dir/src/wat-writer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/c-writer.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/c-writer.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/c-writer.cc",
+  "output": "CMakeFiles/wasm.dir/src/c-writer.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/prebuilt/wasm2c_header_top.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_top.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_top.cc",
+  "output": "CMakeFiles/wasm.dir/src/prebuilt/wasm2c_header_top.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/prebuilt/wasm2c_header_bottom.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_bottom.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_header_bottom.cc",
+  "output": "CMakeFiles/wasm.dir/src/prebuilt/wasm2c_header_bottom.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/prebuilt/wasm2c_source_includes.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_includes.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_includes.cc",
+  "output": "CMakeFiles/wasm.dir/src/prebuilt/wasm2c_source_includes.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/prebuilt/wasm2c_source_declarations.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_declarations.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_source_declarations.cc",
+  "output": "CMakeFiles/wasm.dir/src/prebuilt/wasm2c_source_declarations.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/prebuilt/wasm2c_simd_source_declarations.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_simd_source_declarations.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_simd_source_declarations.cc",
+  "output": "CMakeFiles/wasm.dir/src/prebuilt/wasm2c_simd_source_declarations.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/prebuilt/wasm2c_atomicops_source_declarations.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_atomicops_source_declarations.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/prebuilt/wasm2c_atomicops_source_declarations.cc",
+  "output": "CMakeFiles/wasm.dir/src/prebuilt/wasm2c_atomicops_source_declarations.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/interp/binary-reader-interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/binary-reader-interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/binary-reader-interp.cc",
+  "output": "CMakeFiles/wasm.dir/src/interp/binary-reader-interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/interp/interp.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp.cc",
+  "output": "CMakeFiles/wasm.dir/src/interp/interp.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/interp/interp-util.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp-util.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp-util.cc",
+  "output": "CMakeFiles/wasm.dir/src/interp/interp-util.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/interp/istream.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/istream.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/istream.cc",
+  "output": "CMakeFiles/wasm.dir/src/interp/istream.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/c++ -DWASM_API_EXTERN=\"__attribute__((visibility(\\\"default\\\")))\" -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -Dwasm_EXPORTS -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include  -Wold-style-cast -fno-exceptions -std=c++17 -fPIC -fvisibility=hidden   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -Wno-old-style-cast -o CMakeFiles/wasm.dir/src/interp/interp-wasm-c-api.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp-wasm-c-api.cc",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/src/interp/interp-wasm-c-api.cc",
+  "output": "CMakeFiles/wasm.dir/src/interp/interp-wasm-c-api.cc.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-callback.dir/third_party/wasm-c-api/example/callback.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/callback.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/callback.c",
+  "output": "CMakeFiles/wasm-c-api-callback.dir/third_party/wasm-c-api/example/callback.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-finalize.dir/third_party/wasm-c-api/example/finalize.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/finalize.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/finalize.c",
+  "output": "CMakeFiles/wasm-c-api-finalize.dir/third_party/wasm-c-api/example/finalize.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-global.dir/third_party/wasm-c-api/example/global.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/global.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/global.c",
+  "output": "CMakeFiles/wasm-c-api-global.dir/third_party/wasm-c-api/example/global.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-hello.dir/third_party/wasm-c-api/example/hello.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/hello.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/hello.c",
+  "output": "CMakeFiles/wasm-c-api-hello.dir/third_party/wasm-c-api/example/hello.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-hostref.dir/third_party/wasm-c-api/example/hostref.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/hostref.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/hostref.c",
+  "output": "CMakeFiles/wasm-c-api-hostref.dir/third_party/wasm-c-api/example/hostref.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-multi.dir/third_party/wasm-c-api/example/multi.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/multi.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/multi.c",
+  "output": "CMakeFiles/wasm-c-api-multi.dir/third_party/wasm-c-api/example/multi.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-memory.dir/third_party/wasm-c-api/example/memory.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/memory.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/memory.c",
+  "output": "CMakeFiles/wasm-c-api-memory.dir/third_party/wasm-c-api/example/memory.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-reflect.dir/third_party/wasm-c-api/example/reflect.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/reflect.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/reflect.c",
+  "output": "CMakeFiles/wasm-c-api-reflect.dir/third_party/wasm-c-api/example/reflect.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-serialize.dir/third_party/wasm-c-api/example/serialize.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/serialize.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/serialize.c",
+  "output": "CMakeFiles/wasm-c-api-serialize.dir/third_party/wasm-c-api/example/serialize.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-start.dir/third_party/wasm-c-api/example/start.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/start.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/start.c",
+  "output": "CMakeFiles/wasm-c-api-start.dir/third_party/wasm-c-api/example/start.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-table.dir/third_party/wasm-c-api/example/table.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/table.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/table.c",
+  "output": "CMakeFiles/wasm-c-api-table.dir/third_party/wasm-c-api/example/table.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-trap.dir/third_party/wasm-c-api/example/trap.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/trap.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/trap.c",
+  "output": "CMakeFiles/wasm-c-api-trap.dir/third_party/wasm-c-api/example/trap.c.o"
+},
+{
+  "directory": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build",
+  "command": "/usr/bin/cc -D__STDC_FORMAT_MACROS=1 -D__STDC_LIMIT_MACROS=1 -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/gtest/googletest/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build/include   -Wall -Wextra -Wno-unused-parameter -Wpointer-arith -Wuninitialized -Wimplicit-fallthrough -Wno-clobbered -std=gnu11 -Wno-pointer-to-int-cast -o CMakeFiles/wasm-c-api-threads.dir/third_party/wasm-c-api/example/threads.c.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/threads.c",
+  "file": "/home/semih/Masaüstü/kiraz_20401892_20401901-main/wabt/third_party/wasm-c-api/example/threads.c",
+  "output": "CMakeFiles/wasm-c-api-threads.dir/third_party/wasm-c-api/example/threads.c.o"
+}
+]
