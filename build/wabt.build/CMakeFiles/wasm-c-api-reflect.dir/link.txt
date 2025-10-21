@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wold-style-cast -fno-exceptions "CMakeFiles/wasm-c-api-reflect.dir/third_party/wasm-c-api/example/reflect.c.o" -o wasm-c-api-reflect  -Wl,-rpath,/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build libwasm.so libwabt.a /usr/lib/x86_64-linux-gnu/libcrypto.so 

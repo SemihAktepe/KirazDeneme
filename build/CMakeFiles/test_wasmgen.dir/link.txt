@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_wasmgen.dir/kiraz/test/test_wasmgen.cc.o -o test_wasmgen  lib/libgtest.a /usr/lib/x86_64-linux-gnu/libfl.so libkiraz.a wabt.build/libwabt.a 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wold-style-cast -fno-exceptions "CMakeFiles/wasm-c-api-memory.dir/third_party/wasm-c-api/example/memory.c.o" -o wasm-c-api-memory  -Wl,-rpath,/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build libwasm.so libwabt.a /usr/lib/x86_64-linux-gnu/libcrypto.so 
