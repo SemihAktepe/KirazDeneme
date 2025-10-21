@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wold-style-cast -fno-exceptions "CMakeFiles/wasm-c-api-multi.dir/third_party/wasm-c-api/example/multi.c.o" -o wasm-c-api-multi  -Wl,-rpath,/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/wabt.build libwasm.so libwabt.a /usr/lib/x86_64-linux-gnu/libcrypto.so 

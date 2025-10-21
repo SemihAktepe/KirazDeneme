@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main
+CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main/build
+CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kiraz.dir/depend.make
@@ -72,196 +72,476 @@ include CMakeFiles/kiraz.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/kiraz.dir/flags.make
 
-parser.cpp: /home/semih/Masaüstü/kiraz_20401892_20401901-main/parser.yy
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[BISON][PARSER] Building parser with bison 3.8.2"
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main && /usr/bin/bison -d -v -Wcounterexamples -d -o /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/parser.cpp /home/semih/Masaüstü/kiraz_20401892_20401901-main/parser.yy
+parser.cpp: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/parser.yy
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[BISON][PARSER] Building parser with bison 3.8.2"
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 && /usr/bin/bison -d -v -Wcounterexamples -d -o /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/parser.cpp /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/parser.yy
 
 parser.hpp: parser.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate parser.hpp
 
-_lexer_gen.cpp: /home/semih/Masaüstü/kiraz_20401892_20401901-main/lexer.l
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[FLEX][LEXER] Building scanner with flex 2.6.4"
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main && /usr/bin/flex --header-file=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.hpp -o/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.cpp /home/semih/Masaüstü/kiraz_20401892_20401901-main/lexer.l
+_lexer_gen.cpp: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/lexer.l
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[FLEX][LEXER] Building scanner with flex 2.6.4"
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 && /usr/bin/flex --header-file=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.hpp -o/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.cpp /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/lexer.l
 
 _lexer_gen.hpp: _lexer_gen.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate _lexer_gen.hpp
 
-gen/include/resource/FILE_io_ki.h: /home/semih/Masaüstü/kiraz_20401892_20401901-main/cmake/EncodeString.cmake
-gen/include/resource/FILE_io_ki.h: /home/semih/Masaüstü/kiraz_20401892_20401901-main/io.ki
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating gen/include/resource/FILE_io_ki.h, gen/include/resource/FILE_io_ki.cxx"
-	/usr/bin/cmake -Dsource_dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main -Dbinary_dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/gen/include/resource -Dsource_file=/home/semih/Masaüstü/kiraz_20401892_20401901-main/io.ki -Doutput_name=FILE_io_ki -Dexport_symbol= -Dexport_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_amp_encode_string_run=ON -P /home/semih/Masaüstü/kiraz_20401892_20401901-main/cmake/EncodeString.cmake
+gen/include/resource/FILE_io_ki.h: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/cmake/EncodeString.cmake
+gen/include/resource/FILE_io_ki.h: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/io.ki
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating gen/include/resource/FILE_io_ki.h, gen/include/resource/FILE_io_ki.cxx"
+	/usr/bin/cmake -Dsource_dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 -Dbinary_dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/gen/include/resource -Dsource_file=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/io.ki -Doutput_name=FILE_io_ki -Dexport_symbol= -Dexport_header= -Dbinary=FALSE -Dnul_terminate=FALSE -D_amp_encode_string_run=ON -P /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/cmake/EncodeString.cmake
 
 gen/include/resource/FILE_io_ki.cxx: gen/include/resource/FILE_io_ki.h
 	@$(CMAKE_COMMAND) -E touch_nocreate gen/include/resource/FILE_io_ki.cxx
 
 CMakeFiles/kiraz.dir/fmt/format.cc.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/fmt/format.cc.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.cc
+CMakeFiles/kiraz.dir/fmt/format.cc.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.cc
 CMakeFiles/kiraz.dir/fmt/format.cc.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kiraz.dir/fmt/format.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/fmt/format.cc.o -MF CMakeFiles/kiraz.dir/fmt/format.cc.o.d -o CMakeFiles/kiraz.dir/fmt/format.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kiraz.dir/fmt/format.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/fmt/format.cc.o -MF CMakeFiles/kiraz.dir/fmt/format.cc.o.d -o CMakeFiles/kiraz.dir/fmt/format.cc.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.cc
 
 CMakeFiles/kiraz.dir/fmt/format.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/fmt/format.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.cc > CMakeFiles/kiraz.dir/fmt/format.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.cc > CMakeFiles/kiraz.dir/fmt/format.cc.i
 
 CMakeFiles/kiraz.dir/fmt/format.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/fmt/format.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.cc -o CMakeFiles/kiraz.dir/fmt/format.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.cc -o CMakeFiles/kiraz.dir/fmt/format.cc.s
 
 CMakeFiles/kiraz.dir/fmt/os.cc.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/fmt/os.cc.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/os.cc
+CMakeFiles/kiraz.dir/fmt/os.cc.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/os.cc
 CMakeFiles/kiraz.dir/fmt/os.cc.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kiraz.dir/fmt/os.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/fmt/os.cc.o -MF CMakeFiles/kiraz.dir/fmt/os.cc.o.d -o CMakeFiles/kiraz.dir/fmt/os.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/os.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kiraz.dir/fmt/os.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/fmt/os.cc.o -MF CMakeFiles/kiraz.dir/fmt/os.cc.o.d -o CMakeFiles/kiraz.dir/fmt/os.cc.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/os.cc
 
 CMakeFiles/kiraz.dir/fmt/os.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/fmt/os.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/os.cc > CMakeFiles/kiraz.dir/fmt/os.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/os.cc > CMakeFiles/kiraz.dir/fmt/os.cc.i
 
 CMakeFiles/kiraz.dir/fmt/os.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/fmt/os.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/os.cc -o CMakeFiles/kiraz.dir/fmt/os.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/os.cc -o CMakeFiles/kiraz.dir/fmt/os.cc.s
 
 CMakeFiles/kiraz.dir/kiraz/Token.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/Token.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Token.cpp
+CMakeFiles/kiraz.dir/kiraz/Token.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Token.cpp
 CMakeFiles/kiraz.dir/kiraz/Token.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kiraz.dir/kiraz/Token.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/Token.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/Token.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/Token.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kiraz.dir/kiraz/Token.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/Token.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/Token.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/Token.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Token.cpp
 
 CMakeFiles/kiraz.dir/kiraz/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/Token.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Token.cpp > CMakeFiles/kiraz.dir/kiraz/Token.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Token.cpp > CMakeFiles/kiraz.dir/kiraz/Token.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/Token.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Token.cpp -o CMakeFiles/kiraz.dir/kiraz/Token.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Token.cpp -o CMakeFiles/kiraz.dir/kiraz/Token.cpp.s
 
 CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Literal.cpp
+CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Literal.cpp
 CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Literal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Literal.cpp
 
 CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Literal.cpp > CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Literal.cpp > CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Literal.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Literal.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.s
 
 CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Operator.cpp
+CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Operator.cpp
 CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Operator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Operator.cpp
 
 CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Operator.cpp > CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Operator.cpp > CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Operator.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Operator.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Id.cpp
+CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Id.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Id.cpp > CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Id.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwLet.cpp
+CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwLet.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwLet.cpp > CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwLet.cpp -o CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwImport.cpp
+CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwImport.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwImport.cpp > CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwImport.cpp -o CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwIf.cpp
+CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwIf.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwIf.cpp > CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwIf.cpp -o CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwElse.cpp
+CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwElse.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwElse.cpp > CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwElse.cpp -o CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwClass.cpp
+CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwClass.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwClass.cpp > CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwClass.cpp -o CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwWhile.cpp
+CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwWhile.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwWhile.cpp > CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwWhile.cpp -o CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Func.cpp
+CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Func.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Func.cpp > CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Func.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Return.cpp
+CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Return.cpp
+
+CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Return.cpp > CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Return.cpp -o CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.s
 
 CMakeFiles/kiraz.dir/kiraz/Node.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/Node.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Node.cpp
+CMakeFiles/kiraz.dir/kiraz/Node.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Node.cpp
 CMakeFiles/kiraz.dir/kiraz/Node.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/kiraz.dir/kiraz/Node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/Node.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/Node.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/Node.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/kiraz.dir/kiraz/Node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/Node.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/Node.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/Node.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Node.cpp
 
 CMakeFiles/kiraz.dir/kiraz/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/Node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Node.cpp > CMakeFiles/kiraz.dir/kiraz/Node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Node.cpp > CMakeFiles/kiraz.dir/kiraz/Node.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/Node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Node.cpp -o CMakeFiles/kiraz.dir/kiraz/Node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Node.cpp -o CMakeFiles/kiraz.dir/kiraz/Node.cpp.s
 
 CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Compiler.cpp
+CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Compiler.cpp
 CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Compiler.cpp
 
 CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Compiler.cpp > CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Compiler.cpp > CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Compiler.cpp -o CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Compiler.cpp -o CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.s
 
 CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Operator.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Operator.cpp
 CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Operator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Operator.cpp
 
 CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Operator.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Operator.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Operator.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Operator.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.s
 
 CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o: CMakeFiles/kiraz.dir/flags.make
-CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Literal.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Literal.cpp
 CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Literal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Literal.cpp
 
 CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Literal.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Literal.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.i
 
 CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/ast/Literal.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Literal.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Id.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Id.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Id.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Id.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwLet.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwLet.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwLet.cpp > CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwLet.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwImport.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwImport.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwImport.cpp > CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwImport.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwIfElse.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwIfElse.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwIfElse.cpp > CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwIfElse.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwClass.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwClass.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwClass.cpp > CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwClass.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwWhile.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwWhile.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwWhile.cpp > CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/KwWhile.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Return.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Return.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Return.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Return.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Call.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Call.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Call.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Call.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Arg.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Arg.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Arg.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Arg.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Func.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Func.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Func.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Func.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.s
+
+CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o: CMakeFiles/kiraz.dir/flags.make
+CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Module.cpp
+CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o -MF CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o.d -o CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Module.cpp
+
+CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Module.cpp > CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.i
+
+CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/ast/Module.cpp -o CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.s
 
 CMakeFiles/kiraz.dir/parser.cpp.o: CMakeFiles/kiraz.dir/flags.make
 CMakeFiles/kiraz.dir/parser.cpp.o: parser.cpp
 CMakeFiles/kiraz.dir/parser.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/kiraz.dir/parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/parser.cpp.o -MF CMakeFiles/kiraz.dir/parser.cpp.o.d -o CMakeFiles/kiraz.dir/parser.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/kiraz.dir/parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/parser.cpp.o -MF CMakeFiles/kiraz.dir/parser.cpp.o.d -o CMakeFiles/kiraz.dir/parser.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/parser.cpp
 
 CMakeFiles/kiraz.dir/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/parser.cpp > CMakeFiles/kiraz.dir/parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/parser.cpp > CMakeFiles/kiraz.dir/parser.cpp.i
 
 CMakeFiles/kiraz.dir/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/parser.cpp -o CMakeFiles/kiraz.dir/parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/parser.cpp -o CMakeFiles/kiraz.dir/parser.cpp.s
 
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: CMakeFiles/kiraz.dir/flags.make
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: _lexer_gen.cpp
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: parser.hpp
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/kiraz.dir/_lexer_gen.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/_lexer_gen.cpp.o -MF CMakeFiles/kiraz.dir/_lexer_gen.cpp.o.d -o CMakeFiles/kiraz.dir/_lexer_gen.cpp.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/kiraz.dir/_lexer_gen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/_lexer_gen.cpp.o -MF CMakeFiles/kiraz.dir/_lexer_gen.cpp.o.d -o CMakeFiles/kiraz.dir/_lexer_gen.cpp.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.cpp
 
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/_lexer_gen.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.cpp > CMakeFiles/kiraz.dir/_lexer_gen.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.cpp > CMakeFiles/kiraz.dir/_lexer_gen.cpp.i
 
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/_lexer_gen.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.cpp -o CMakeFiles/kiraz.dir/_lexer_gen.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.cpp -o CMakeFiles/kiraz.dir/_lexer_gen.cpp.s
 
 CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o: CMakeFiles/kiraz.dir/flags.make
 CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o: gen/include/resource/FILE_io_ki.cxx
 CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o: CMakeFiles/kiraz.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o -MF CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o.d -o CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/gen/include/resource/FILE_io_ki.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o -MF CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o.d -o CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/gen/include/resource/FILE_io_ki.cxx
 
 CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/gen/include/resource/FILE_io_ki.cxx > CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/gen/include/resource/FILE_io_ki.cxx > CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.i
 
 CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/gen/include/resource/FILE_io_ki.cxx -o CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/gen/include/resource/FILE_io_ki.cxx -o CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.s
 
 # Object files for target kiraz
 kiraz_OBJECTS = \
@@ -270,10 +550,30 @@ kiraz_OBJECTS = \
 "CMakeFiles/kiraz.dir/kiraz/Token.cpp.o" \
 "CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o" \
 "CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o" \
 "CMakeFiles/kiraz.dir/kiraz/Node.cpp.o" \
 "CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o" \
 "CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o" \
 "CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o" \
+"CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o" \
 "CMakeFiles/kiraz.dir/parser.cpp.o" \
 "CMakeFiles/kiraz.dir/_lexer_gen.cpp.o" \
 "CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o"
@@ -286,16 +586,36 @@ libkiraz.a: CMakeFiles/kiraz.dir/fmt/os.cc.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/Token.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/Literal.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/Node.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/Compiler.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o
+libkiraz.a: CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/parser.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/_lexer_gen.cpp.o
 libkiraz.a: CMakeFiles/kiraz.dir/gen/include/resource/FILE_io_ki.cxx.o
 libkiraz.a: CMakeFiles/kiraz.dir/build.make
 libkiraz.a: CMakeFiles/kiraz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libkiraz.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX static library libkiraz.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/kiraz.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kiraz.dir/link.txt --verbose=$(VERBOSE)
 
@@ -313,6 +633,6 @@ CMakeFiles/kiraz.dir/depend: gen/include/resource/FILE_io_ki.cxx
 CMakeFiles/kiraz.dir/depend: gen/include/resource/FILE_io_ki.h
 CMakeFiles/kiraz.dir/depend: parser.cpp
 CMakeFiles/kiraz.dir/depend: parser.hpp
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/semih/Masaüstü/kiraz_20401892_20401901-main /home/semih/Masaüstü/kiraz_20401892_20401901-main /home/semih/Masaüstü/kiraz_20401892_20401901-main/build /home/semih/Masaüstü/kiraz_20401892_20401901-main/build /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles/kiraz.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles/kiraz.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/kiraz.dir/depend
 

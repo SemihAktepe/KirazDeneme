@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main
+CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main/build
+CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,9 +145,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles /home/semih/Masaüstü/kiraz_20401892_20401901-main/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,32 +225,6 @@ test_semantics: cmake_check_build_system
 test_semantics/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_semantics.dir/build.make CMakeFiles/test_semantics.dir/build
 .PHONY : test_semantics/fast
-
-#=============================================================================
-# Target rules for targets named test_wasmgen
-
-# Build rule for target.
-test_wasmgen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_wasmgen
-.PHONY : test_wasmgen
-
-# fast build rule for target.
-test_wasmgen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wasmgen.dir/build.make CMakeFiles/test_wasmgen.dir/build
-.PHONY : test_wasmgen/fast
-
-#=============================================================================
-# Target rules for targets named wabt
-
-# Build rule for target.
-wabt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wabt
-.PHONY : wabt
-
-# fast build rule for target.
-wabt/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wabt.dir/build.make CMakeFiles/wabt.dir/build
-.PHONY : wabt/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -472,6 +446,222 @@ kiraz/Token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/Token.cpp.s
 .PHONY : kiraz/Token.cpp.s
 
+kiraz/ast/Arg.o: kiraz/ast/Arg.cpp.o
+.PHONY : kiraz/ast/Arg.o
+
+# target to build an object file
+kiraz/ast/Arg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.o
+.PHONY : kiraz/ast/Arg.cpp.o
+
+kiraz/ast/Arg.i: kiraz/ast/Arg.cpp.i
+.PHONY : kiraz/ast/Arg.i
+
+# target to preprocess a source file
+kiraz/ast/Arg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.i
+.PHONY : kiraz/ast/Arg.cpp.i
+
+kiraz/ast/Arg.s: kiraz/ast/Arg.cpp.s
+.PHONY : kiraz/ast/Arg.s
+
+# target to generate assembly for a file
+kiraz/ast/Arg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Arg.cpp.s
+.PHONY : kiraz/ast/Arg.cpp.s
+
+kiraz/ast/Call.o: kiraz/ast/Call.cpp.o
+.PHONY : kiraz/ast/Call.o
+
+# target to build an object file
+kiraz/ast/Call.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.o
+.PHONY : kiraz/ast/Call.cpp.o
+
+kiraz/ast/Call.i: kiraz/ast/Call.cpp.i
+.PHONY : kiraz/ast/Call.i
+
+# target to preprocess a source file
+kiraz/ast/Call.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.i
+.PHONY : kiraz/ast/Call.cpp.i
+
+kiraz/ast/Call.s: kiraz/ast/Call.cpp.s
+.PHONY : kiraz/ast/Call.s
+
+# target to generate assembly for a file
+kiraz/ast/Call.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Call.cpp.s
+.PHONY : kiraz/ast/Call.cpp.s
+
+kiraz/ast/Func.o: kiraz/ast/Func.cpp.o
+.PHONY : kiraz/ast/Func.o
+
+# target to build an object file
+kiraz/ast/Func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.o
+.PHONY : kiraz/ast/Func.cpp.o
+
+kiraz/ast/Func.i: kiraz/ast/Func.cpp.i
+.PHONY : kiraz/ast/Func.i
+
+# target to preprocess a source file
+kiraz/ast/Func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.i
+.PHONY : kiraz/ast/Func.cpp.i
+
+kiraz/ast/Func.s: kiraz/ast/Func.cpp.s
+.PHONY : kiraz/ast/Func.s
+
+# target to generate assembly for a file
+kiraz/ast/Func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Func.cpp.s
+.PHONY : kiraz/ast/Func.cpp.s
+
+kiraz/ast/Id.o: kiraz/ast/Id.cpp.o
+.PHONY : kiraz/ast/Id.o
+
+# target to build an object file
+kiraz/ast/Id.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.o
+.PHONY : kiraz/ast/Id.cpp.o
+
+kiraz/ast/Id.i: kiraz/ast/Id.cpp.i
+.PHONY : kiraz/ast/Id.i
+
+# target to preprocess a source file
+kiraz/ast/Id.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.i
+.PHONY : kiraz/ast/Id.cpp.i
+
+kiraz/ast/Id.s: kiraz/ast/Id.cpp.s
+.PHONY : kiraz/ast/Id.s
+
+# target to generate assembly for a file
+kiraz/ast/Id.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Id.cpp.s
+.PHONY : kiraz/ast/Id.cpp.s
+
+kiraz/ast/KwClass.o: kiraz/ast/KwClass.cpp.o
+.PHONY : kiraz/ast/KwClass.o
+
+# target to build an object file
+kiraz/ast/KwClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.o
+.PHONY : kiraz/ast/KwClass.cpp.o
+
+kiraz/ast/KwClass.i: kiraz/ast/KwClass.cpp.i
+.PHONY : kiraz/ast/KwClass.i
+
+# target to preprocess a source file
+kiraz/ast/KwClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.i
+.PHONY : kiraz/ast/KwClass.cpp.i
+
+kiraz/ast/KwClass.s: kiraz/ast/KwClass.cpp.s
+.PHONY : kiraz/ast/KwClass.s
+
+# target to generate assembly for a file
+kiraz/ast/KwClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwClass.cpp.s
+.PHONY : kiraz/ast/KwClass.cpp.s
+
+kiraz/ast/KwIfElse.o: kiraz/ast/KwIfElse.cpp.o
+.PHONY : kiraz/ast/KwIfElse.o
+
+# target to build an object file
+kiraz/ast/KwIfElse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.o
+.PHONY : kiraz/ast/KwIfElse.cpp.o
+
+kiraz/ast/KwIfElse.i: kiraz/ast/KwIfElse.cpp.i
+.PHONY : kiraz/ast/KwIfElse.i
+
+# target to preprocess a source file
+kiraz/ast/KwIfElse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.i
+.PHONY : kiraz/ast/KwIfElse.cpp.i
+
+kiraz/ast/KwIfElse.s: kiraz/ast/KwIfElse.cpp.s
+.PHONY : kiraz/ast/KwIfElse.s
+
+# target to generate assembly for a file
+kiraz/ast/KwIfElse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwIfElse.cpp.s
+.PHONY : kiraz/ast/KwIfElse.cpp.s
+
+kiraz/ast/KwImport.o: kiraz/ast/KwImport.cpp.o
+.PHONY : kiraz/ast/KwImport.o
+
+# target to build an object file
+kiraz/ast/KwImport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.o
+.PHONY : kiraz/ast/KwImport.cpp.o
+
+kiraz/ast/KwImport.i: kiraz/ast/KwImport.cpp.i
+.PHONY : kiraz/ast/KwImport.i
+
+# target to preprocess a source file
+kiraz/ast/KwImport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.i
+.PHONY : kiraz/ast/KwImport.cpp.i
+
+kiraz/ast/KwImport.s: kiraz/ast/KwImport.cpp.s
+.PHONY : kiraz/ast/KwImport.s
+
+# target to generate assembly for a file
+kiraz/ast/KwImport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwImport.cpp.s
+.PHONY : kiraz/ast/KwImport.cpp.s
+
+kiraz/ast/KwLet.o: kiraz/ast/KwLet.cpp.o
+.PHONY : kiraz/ast/KwLet.o
+
+# target to build an object file
+kiraz/ast/KwLet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.o
+.PHONY : kiraz/ast/KwLet.cpp.o
+
+kiraz/ast/KwLet.i: kiraz/ast/KwLet.cpp.i
+.PHONY : kiraz/ast/KwLet.i
+
+# target to preprocess a source file
+kiraz/ast/KwLet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.i
+.PHONY : kiraz/ast/KwLet.cpp.i
+
+kiraz/ast/KwLet.s: kiraz/ast/KwLet.cpp.s
+.PHONY : kiraz/ast/KwLet.s
+
+# target to generate assembly for a file
+kiraz/ast/KwLet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwLet.cpp.s
+.PHONY : kiraz/ast/KwLet.cpp.s
+
+kiraz/ast/KwWhile.o: kiraz/ast/KwWhile.cpp.o
+.PHONY : kiraz/ast/KwWhile.o
+
+# target to build an object file
+kiraz/ast/KwWhile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.o
+.PHONY : kiraz/ast/KwWhile.cpp.o
+
+kiraz/ast/KwWhile.i: kiraz/ast/KwWhile.cpp.i
+.PHONY : kiraz/ast/KwWhile.i
+
+# target to preprocess a source file
+kiraz/ast/KwWhile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.i
+.PHONY : kiraz/ast/KwWhile.cpp.i
+
+kiraz/ast/KwWhile.s: kiraz/ast/KwWhile.cpp.s
+.PHONY : kiraz/ast/KwWhile.s
+
+# target to generate assembly for a file
+kiraz/ast/KwWhile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/KwWhile.cpp.s
+.PHONY : kiraz/ast/KwWhile.cpp.s
+
 kiraz/ast/Literal.o: kiraz/ast/Literal.cpp.o
 .PHONY : kiraz/ast/Literal.o
 
@@ -496,6 +686,30 @@ kiraz/ast/Literal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Literal.cpp.s
 .PHONY : kiraz/ast/Literal.cpp.s
 
+kiraz/ast/Module.o: kiraz/ast/Module.cpp.o
+.PHONY : kiraz/ast/Module.o
+
+# target to build an object file
+kiraz/ast/Module.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.o
+.PHONY : kiraz/ast/Module.cpp.o
+
+kiraz/ast/Module.i: kiraz/ast/Module.cpp.i
+.PHONY : kiraz/ast/Module.i
+
+# target to preprocess a source file
+kiraz/ast/Module.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.i
+.PHONY : kiraz/ast/Module.cpp.i
+
+kiraz/ast/Module.s: kiraz/ast/Module.cpp.s
+.PHONY : kiraz/ast/Module.s
+
+# target to generate assembly for a file
+kiraz/ast/Module.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Module.cpp.s
+.PHONY : kiraz/ast/Module.cpp.s
+
 kiraz/ast/Operator.o: kiraz/ast/Operator.cpp.o
 .PHONY : kiraz/ast/Operator.o
 
@@ -519,6 +733,30 @@ kiraz/ast/Operator.s: kiraz/ast/Operator.cpp.s
 kiraz/ast/Operator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Operator.cpp.s
 .PHONY : kiraz/ast/Operator.cpp.s
+
+kiraz/ast/Return.o: kiraz/ast/Return.cpp.o
+.PHONY : kiraz/ast/Return.o
+
+# target to build an object file
+kiraz/ast/Return.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.o
+.PHONY : kiraz/ast/Return.cpp.o
+
+kiraz/ast/Return.i: kiraz/ast/Return.cpp.i
+.PHONY : kiraz/ast/Return.i
+
+# target to preprocess a source file
+kiraz/ast/Return.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.i
+.PHONY : kiraz/ast/Return.cpp.i
+
+kiraz/ast/Return.s: kiraz/ast/Return.cpp.s
+.PHONY : kiraz/ast/Return.s
+
+# target to generate assembly for a file
+kiraz/ast/Return.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/ast/Return.cpp.s
+.PHONY : kiraz/ast/Return.cpp.s
 
 kiraz/test/test_parser.o: kiraz/test/test_parser.cc.o
 .PHONY : kiraz/test/test_parser.o
@@ -568,29 +806,197 @@ kiraz/test/test_semantics.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_semantics.dir/build.make CMakeFiles/test_semantics.dir/kiraz/test/test_semantics.cc.s
 .PHONY : kiraz/test/test_semantics.cc.s
 
-kiraz/test/test_wasmgen.o: kiraz/test/test_wasmgen.cc.o
-.PHONY : kiraz/test/test_wasmgen.o
+kiraz/token/Func.o: kiraz/token/Func.cpp.o
+.PHONY : kiraz/token/Func.o
 
 # target to build an object file
-kiraz/test/test_wasmgen.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wasmgen.dir/build.make CMakeFiles/test_wasmgen.dir/kiraz/test/test_wasmgen.cc.o
-.PHONY : kiraz/test/test_wasmgen.cc.o
+kiraz/token/Func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.o
+.PHONY : kiraz/token/Func.cpp.o
 
-kiraz/test/test_wasmgen.i: kiraz/test/test_wasmgen.cc.i
-.PHONY : kiraz/test/test_wasmgen.i
+kiraz/token/Func.i: kiraz/token/Func.cpp.i
+.PHONY : kiraz/token/Func.i
 
 # target to preprocess a source file
-kiraz/test/test_wasmgen.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wasmgen.dir/build.make CMakeFiles/test_wasmgen.dir/kiraz/test/test_wasmgen.cc.i
-.PHONY : kiraz/test/test_wasmgen.cc.i
+kiraz/token/Func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.i
+.PHONY : kiraz/token/Func.cpp.i
 
-kiraz/test/test_wasmgen.s: kiraz/test/test_wasmgen.cc.s
-.PHONY : kiraz/test/test_wasmgen.s
+kiraz/token/Func.s: kiraz/token/Func.cpp.s
+.PHONY : kiraz/token/Func.s
 
 # target to generate assembly for a file
-kiraz/test/test_wasmgen.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wasmgen.dir/build.make CMakeFiles/test_wasmgen.dir/kiraz/test/test_wasmgen.cc.s
-.PHONY : kiraz/test/test_wasmgen.cc.s
+kiraz/token/Func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Func.cpp.s
+.PHONY : kiraz/token/Func.cpp.s
+
+kiraz/token/Id.o: kiraz/token/Id.cpp.o
+.PHONY : kiraz/token/Id.o
+
+# target to build an object file
+kiraz/token/Id.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.o
+.PHONY : kiraz/token/Id.cpp.o
+
+kiraz/token/Id.i: kiraz/token/Id.cpp.i
+.PHONY : kiraz/token/Id.i
+
+# target to preprocess a source file
+kiraz/token/Id.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.i
+.PHONY : kiraz/token/Id.cpp.i
+
+kiraz/token/Id.s: kiraz/token/Id.cpp.s
+.PHONY : kiraz/token/Id.s
+
+# target to generate assembly for a file
+kiraz/token/Id.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Id.cpp.s
+.PHONY : kiraz/token/Id.cpp.s
+
+kiraz/token/KwClass.o: kiraz/token/KwClass.cpp.o
+.PHONY : kiraz/token/KwClass.o
+
+# target to build an object file
+kiraz/token/KwClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.o
+.PHONY : kiraz/token/KwClass.cpp.o
+
+kiraz/token/KwClass.i: kiraz/token/KwClass.cpp.i
+.PHONY : kiraz/token/KwClass.i
+
+# target to preprocess a source file
+kiraz/token/KwClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.i
+.PHONY : kiraz/token/KwClass.cpp.i
+
+kiraz/token/KwClass.s: kiraz/token/KwClass.cpp.s
+.PHONY : kiraz/token/KwClass.s
+
+# target to generate assembly for a file
+kiraz/token/KwClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwClass.cpp.s
+.PHONY : kiraz/token/KwClass.cpp.s
+
+kiraz/token/KwElse.o: kiraz/token/KwElse.cpp.o
+.PHONY : kiraz/token/KwElse.o
+
+# target to build an object file
+kiraz/token/KwElse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.o
+.PHONY : kiraz/token/KwElse.cpp.o
+
+kiraz/token/KwElse.i: kiraz/token/KwElse.cpp.i
+.PHONY : kiraz/token/KwElse.i
+
+# target to preprocess a source file
+kiraz/token/KwElse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.i
+.PHONY : kiraz/token/KwElse.cpp.i
+
+kiraz/token/KwElse.s: kiraz/token/KwElse.cpp.s
+.PHONY : kiraz/token/KwElse.s
+
+# target to generate assembly for a file
+kiraz/token/KwElse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwElse.cpp.s
+.PHONY : kiraz/token/KwElse.cpp.s
+
+kiraz/token/KwIf.o: kiraz/token/KwIf.cpp.o
+.PHONY : kiraz/token/KwIf.o
+
+# target to build an object file
+kiraz/token/KwIf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.o
+.PHONY : kiraz/token/KwIf.cpp.o
+
+kiraz/token/KwIf.i: kiraz/token/KwIf.cpp.i
+.PHONY : kiraz/token/KwIf.i
+
+# target to preprocess a source file
+kiraz/token/KwIf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.i
+.PHONY : kiraz/token/KwIf.cpp.i
+
+kiraz/token/KwIf.s: kiraz/token/KwIf.cpp.s
+.PHONY : kiraz/token/KwIf.s
+
+# target to generate assembly for a file
+kiraz/token/KwIf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwIf.cpp.s
+.PHONY : kiraz/token/KwIf.cpp.s
+
+kiraz/token/KwImport.o: kiraz/token/KwImport.cpp.o
+.PHONY : kiraz/token/KwImport.o
+
+# target to build an object file
+kiraz/token/KwImport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.o
+.PHONY : kiraz/token/KwImport.cpp.o
+
+kiraz/token/KwImport.i: kiraz/token/KwImport.cpp.i
+.PHONY : kiraz/token/KwImport.i
+
+# target to preprocess a source file
+kiraz/token/KwImport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.i
+.PHONY : kiraz/token/KwImport.cpp.i
+
+kiraz/token/KwImport.s: kiraz/token/KwImport.cpp.s
+.PHONY : kiraz/token/KwImport.s
+
+# target to generate assembly for a file
+kiraz/token/KwImport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwImport.cpp.s
+.PHONY : kiraz/token/KwImport.cpp.s
+
+kiraz/token/KwLet.o: kiraz/token/KwLet.cpp.o
+.PHONY : kiraz/token/KwLet.o
+
+# target to build an object file
+kiraz/token/KwLet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.o
+.PHONY : kiraz/token/KwLet.cpp.o
+
+kiraz/token/KwLet.i: kiraz/token/KwLet.cpp.i
+.PHONY : kiraz/token/KwLet.i
+
+# target to preprocess a source file
+kiraz/token/KwLet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.i
+.PHONY : kiraz/token/KwLet.cpp.i
+
+kiraz/token/KwLet.s: kiraz/token/KwLet.cpp.s
+.PHONY : kiraz/token/KwLet.s
+
+# target to generate assembly for a file
+kiraz/token/KwLet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwLet.cpp.s
+.PHONY : kiraz/token/KwLet.cpp.s
+
+kiraz/token/KwWhile.o: kiraz/token/KwWhile.cpp.o
+.PHONY : kiraz/token/KwWhile.o
+
+# target to build an object file
+kiraz/token/KwWhile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.o
+.PHONY : kiraz/token/KwWhile.cpp.o
+
+kiraz/token/KwWhile.i: kiraz/token/KwWhile.cpp.i
+.PHONY : kiraz/token/KwWhile.i
+
+# target to preprocess a source file
+kiraz/token/KwWhile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.i
+.PHONY : kiraz/token/KwWhile.cpp.i
+
+kiraz/token/KwWhile.s: kiraz/token/KwWhile.cpp.s
+.PHONY : kiraz/token/KwWhile.s
+
+# target to generate assembly for a file
+kiraz/token/KwWhile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/KwWhile.cpp.s
+.PHONY : kiraz/token/KwWhile.cpp.s
 
 kiraz/token/Literal.o: kiraz/token/Literal.cpp.o
 .PHONY : kiraz/token/Literal.o
@@ -639,6 +1045,30 @@ kiraz/token/Operator.s: kiraz/token/Operator.cpp.s
 kiraz/token/Operator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Operator.cpp.s
 .PHONY : kiraz/token/Operator.cpp.s
+
+kiraz/token/Return.o: kiraz/token/Return.cpp.o
+.PHONY : kiraz/token/Return.o
+
+# target to build an object file
+kiraz/token/Return.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.o
+.PHONY : kiraz/token/Return.cpp.o
+
+kiraz/token/Return.i: kiraz/token/Return.cpp.i
+.PHONY : kiraz/token/Return.i
+
+# target to preprocess a source file
+kiraz/token/Return.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.i
+.PHONY : kiraz/token/Return.cpp.i
+
+kiraz/token/Return.s: kiraz/token/Return.cpp.s
+.PHONY : kiraz/token/Return.s
+
+# target to generate assembly for a file
+kiraz/token/Return.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kiraz.dir/build.make CMakeFiles/kiraz.dir/kiraz/token/Return.cpp.s
+.PHONY : kiraz/token/Return.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -701,7 +1131,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... wabt"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
@@ -710,7 +1139,6 @@ help:
 	@echo "... kirazc"
 	@echo "... test_parser"
 	@echo "... test_semantics"
-	@echo "... test_wasmgen"
 	@echo "... _lexer_gen.o"
 	@echo "... _lexer_gen.i"
 	@echo "... _lexer_gen.s"
@@ -732,27 +1160,84 @@ help:
 	@echo "... kiraz/Token.o"
 	@echo "... kiraz/Token.i"
 	@echo "... kiraz/Token.s"
+	@echo "... kiraz/ast/Arg.o"
+	@echo "... kiraz/ast/Arg.i"
+	@echo "... kiraz/ast/Arg.s"
+	@echo "... kiraz/ast/Call.o"
+	@echo "... kiraz/ast/Call.i"
+	@echo "... kiraz/ast/Call.s"
+	@echo "... kiraz/ast/Func.o"
+	@echo "... kiraz/ast/Func.i"
+	@echo "... kiraz/ast/Func.s"
+	@echo "... kiraz/ast/Id.o"
+	@echo "... kiraz/ast/Id.i"
+	@echo "... kiraz/ast/Id.s"
+	@echo "... kiraz/ast/KwClass.o"
+	@echo "... kiraz/ast/KwClass.i"
+	@echo "... kiraz/ast/KwClass.s"
+	@echo "... kiraz/ast/KwIfElse.o"
+	@echo "... kiraz/ast/KwIfElse.i"
+	@echo "... kiraz/ast/KwIfElse.s"
+	@echo "... kiraz/ast/KwImport.o"
+	@echo "... kiraz/ast/KwImport.i"
+	@echo "... kiraz/ast/KwImport.s"
+	@echo "... kiraz/ast/KwLet.o"
+	@echo "... kiraz/ast/KwLet.i"
+	@echo "... kiraz/ast/KwLet.s"
+	@echo "... kiraz/ast/KwWhile.o"
+	@echo "... kiraz/ast/KwWhile.i"
+	@echo "... kiraz/ast/KwWhile.s"
 	@echo "... kiraz/ast/Literal.o"
 	@echo "... kiraz/ast/Literal.i"
 	@echo "... kiraz/ast/Literal.s"
+	@echo "... kiraz/ast/Module.o"
+	@echo "... kiraz/ast/Module.i"
+	@echo "... kiraz/ast/Module.s"
 	@echo "... kiraz/ast/Operator.o"
 	@echo "... kiraz/ast/Operator.i"
 	@echo "... kiraz/ast/Operator.s"
+	@echo "... kiraz/ast/Return.o"
+	@echo "... kiraz/ast/Return.i"
+	@echo "... kiraz/ast/Return.s"
 	@echo "... kiraz/test/test_parser.o"
 	@echo "... kiraz/test/test_parser.i"
 	@echo "... kiraz/test/test_parser.s"
 	@echo "... kiraz/test/test_semantics.o"
 	@echo "... kiraz/test/test_semantics.i"
 	@echo "... kiraz/test/test_semantics.s"
-	@echo "... kiraz/test/test_wasmgen.o"
-	@echo "... kiraz/test/test_wasmgen.i"
-	@echo "... kiraz/test/test_wasmgen.s"
+	@echo "... kiraz/token/Func.o"
+	@echo "... kiraz/token/Func.i"
+	@echo "... kiraz/token/Func.s"
+	@echo "... kiraz/token/Id.o"
+	@echo "... kiraz/token/Id.i"
+	@echo "... kiraz/token/Id.s"
+	@echo "... kiraz/token/KwClass.o"
+	@echo "... kiraz/token/KwClass.i"
+	@echo "... kiraz/token/KwClass.s"
+	@echo "... kiraz/token/KwElse.o"
+	@echo "... kiraz/token/KwElse.i"
+	@echo "... kiraz/token/KwElse.s"
+	@echo "... kiraz/token/KwIf.o"
+	@echo "... kiraz/token/KwIf.i"
+	@echo "... kiraz/token/KwIf.s"
+	@echo "... kiraz/token/KwImport.o"
+	@echo "... kiraz/token/KwImport.i"
+	@echo "... kiraz/token/KwImport.s"
+	@echo "... kiraz/token/KwLet.o"
+	@echo "... kiraz/token/KwLet.i"
+	@echo "... kiraz/token/KwLet.s"
+	@echo "... kiraz/token/KwWhile.o"
+	@echo "... kiraz/token/KwWhile.i"
+	@echo "... kiraz/token/KwWhile.s"
 	@echo "... kiraz/token/Literal.o"
 	@echo "... kiraz/token/Literal.i"
 	@echo "... kiraz/token/Literal.s"
 	@echo "... kiraz/token/Operator.o"
 	@echo "... kiraz/token/Operator.i"
 	@echo "... kiraz/token/Operator.s"
+	@echo "... kiraz/token/Return.o"
+	@echo "... kiraz/token/Return.i"
+	@echo "... kiraz/token/Return.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

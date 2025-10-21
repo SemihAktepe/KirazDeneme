@@ -119,6 +119,25 @@ add_library(kiraz STATIC
     kiraz/token/Literal.cpp
     kiraz/token/Operator.h
     kiraz/token/Operator.cpp
+    kiraz/token/Id.h
+    kiraz/token/Id.cpp
+    kiraz/token/KwLet.h
+    kiraz/token/KwLet.cpp
+    kiraz/token/KwImport.h
+    kiraz/token/KwImport.cpp
+    kiraz/token/KwIf.h
+    kiraz/token/KwIf.cpp
+    kiraz/token/KwElse.h
+    kiraz/token/KwElse.cpp
+    kiraz/token/KwClass.h
+    kiraz/token/KwClass.cpp
+    kiraz/token/KwWhile.h
+    kiraz/token/KwWhile.cpp
+    kiraz/token/Func.h
+    kiraz/token/Func.cpp
+    kiraz/token/Return.h
+    kiraz/token/Return.cpp
+
 
     kiraz/Node.h
     kiraz/Node.cpp
@@ -132,6 +151,36 @@ add_library(kiraz STATIC
     kiraz/ast/Literal.h
     kiraz/ast/Literal.cpp
 
+
+    kiraz/ast/Id.h
+    kiraz/ast/Id.cpp
+
+    kiraz/ast/KwLet.h
+    kiraz/ast/KwLet.cpp
+    kiraz/ast/KwImport.h
+    kiraz/ast/KwImport.cpp
+    kiraz/ast/KwIfElse.h
+    kiraz/ast/KwIfElse.cpp
+    kiraz/ast/KwClass.h
+    kiraz/ast/KwClass.cpp
+    kiraz/ast/KwWhile.h
+    kiraz/ast/KwWhile.cpp
+    kiraz/ast/Return.h
+    kiraz/ast/Return.cpp
+    kiraz/ast/Call.h
+    kiraz/ast/Call.cpp
+
+    kiraz/ast/Arg.h
+    kiraz/ast/Arg.cpp
+
+    kiraz/ast/Func.h
+    kiraz/ast/Func.cpp
+
+    kiraz/ast/Module.h
+    kiraz/ast/Module.cpp
+
+    main.h
+    
     ${BISON_PARSER_OUTPUTS}
     ${FLEX_LEXER_OUTPUTS}
 
@@ -144,6 +193,8 @@ add_library(kiraz STATIC
 
 add_executable(kirazc main.cpp)
 target_link_libraries(kirazc PRIVATE kiraz)
+
 add_definitions(-DYYDEBUG=1)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${FLEX_LIBRARIES})
 
 include(test.cmake)

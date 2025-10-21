@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-src"
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-build"
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-src"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-build"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

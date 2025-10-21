@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/semih/Masaüstü/kiraz_20401892_20401901-main/main.cpp" "CMakeFiles/kirazc.dir/main.cpp.o" "gcc" "CMakeFiles/kirazc.dir/main.cpp.o.d"
+  "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/main.cpp" "CMakeFiles/kirazc.dir/main.cpp.o" "gcc" "CMakeFiles/kirazc.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

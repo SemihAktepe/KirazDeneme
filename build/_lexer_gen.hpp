@@ -2,9 +2,9 @@
 #define yyHEADER_H 1
 #define yyIN_HEADER 1
 
-#line 6 "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.hpp"
+#line 6 "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.hpp"
 
-#line 8 "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.hpp"
+#line 8 "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.hpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -467,8 +467,8 @@ extern int yylex (void);
 #undef yyTABLES_NAME
 #endif
 
-#line 19 "/home/semih/Masaüstü/kiraz_20401892_20401901-main/lexer.l"
+#line 75 "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/lexer.l"
 
-#line 473 "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.hpp"
+#line 473 "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.hpp"
 #undef yyIN_HEADER
 #endif /* yyHEADER_H */

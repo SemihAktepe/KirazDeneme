@@ -2,12 +2,18 @@
 #include <cassert>
 #include <cstdio>
 
+#include <string_view>
+
 #include "lexer.hpp"
 #include "main.h"
 #include "parser.hpp"
 
 #include <kiraz/Node.h>
 
+#include <iostream>
+#include <vector>
+
+std::vector<std::string> token_list;
 extern int yydebug;
 
 enum Status {
@@ -106,10 +112,9 @@ int main(int argc, char **argv) {
 
         mode = MODE_UNKNOWN;
     }
-
     if (mode != MODE_UNKNOWN) {
         return usage(argc, argv);
-    }
+        }
 
     return 0;
 }

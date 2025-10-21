@@ -1,7 +1,7 @@
 CMakeFiles/kiraz.dir/fmt/os.cc.o: \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/os.cc \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/os.cc \
  /usr/include/stdc-predef.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/os.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/os.h \
  /usr/include/c++/13/cerrno \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -127,7 +127,7 @@ CMakeFiles/kiraz.dir/fmt/os.cc.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -222,7 +222,7 @@ CMakeFiles/kiraz.dir/fmt/os.cc.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/core.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/core.h \
  /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \

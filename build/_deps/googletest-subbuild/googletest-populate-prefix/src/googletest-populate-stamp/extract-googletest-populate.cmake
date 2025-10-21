@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip" ABSOLUTE)
-get_filename_component(directory "/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-src" ABSOLUTE)
+get_filename_component(filename "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip" ABSOLUTE)
+get_filename_component(directory "/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

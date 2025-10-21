@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DYYDEBUG=1
 
-CXX_INCLUDES = -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/gen/include -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/gen/include/kiraz -I/home/semih/Masaüstü/kiraz_20401892_20401901-main/build -I/home/semih/Masaüstü/kiraz_20401892_20401901-main -isystem /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-src/googletest/include -isystem /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/gen/include -I/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/gen/include/kiraz -I/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build -I/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 -isystem /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-src/googletest/include -isystem /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -std=gnu++20 -Werror=return-type -Werror=dangling-else -Werror=non-virtual-dtor -Werror=suggest-override -Werror=return-local-addr -Wno-free-nonheap-object
 

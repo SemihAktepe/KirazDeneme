@@ -1,7 +1,7 @@
 CMakeFiles/kiraz.dir/fmt/format.cc.o: \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.cc \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.cc \
  /usr/include/stdc-predef.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format-inl.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format-inl.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -197,7 +197,7 @@ CMakeFiles/kiraz.dir/fmt/format.cc.o: \
  /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.h \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -234,5 +234,5 @@ CMakeFiles/kiraz.dir/fmt/format.cc.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/core.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/core.h \
  /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h

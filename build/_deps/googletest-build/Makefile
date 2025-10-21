@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main
+CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main/build
+CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_deps/googletest-build//CMakeFiles/progress.marks
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles 0
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_deps/googletest-build//CMakeFiles/progress.marks
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/clean
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -161,17 +161,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/preinstall
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/preinstall
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -198,6 +198,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

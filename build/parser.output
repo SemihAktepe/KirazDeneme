@@ -3,47 +3,2234 @@ Sabit simgeler gramerde kullanÄ±lmadÄ±
     REJECTED
 
 
+AyrÄ±ÅtÄ±rÄ±cÄ±da Ã§eliskiler yÃ¼zÃ¼nden kurallar yararsÄ±z
+
+   68 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt
+   69        | KW_IF OP_LPAREN reg_stmt OP_RPAREN open_if
+
+
+Durum 0 Ã§eliÅkiler: 1 indirgeme/indirgeme
+Durum 19 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 24 Ã§eliÅkiler: 2 indirgeme/indirgeme
+Durum 47 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 58 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 84 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 86 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 88 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 130 Ã§eliÅkiler: 1 Ã¶teleme/indirgeme
+Durum 131 Ã§eliÅkiler: 1 indirgeme/indirgeme
+
+
 Gramer
 
-    0 $accept: stmt $end
+    0 $accept: module $end
 
-    1 stmt: ε
+    1 module: ε
+    2       | module_stmt
+
+    3 module_stmt: stmt module_stmt
+    4            | ε
+
+    5 stmt: func OP_SEMCOL
+    6     | import_stmt OP_SEMCOL
+    7     | if_stmt OP_SEMCOL
+    8     | class_stmt OP_SEMCOL
+    9     | while_stmt OP_SEMCOL
+   10     | declare OP_SEMCOL
+   11     | return_stmt OP_SEMCOL
+   12     | reg_stmt OP_SEMCOL
+
+   13 reg_stmt: tf
+   14         | assign
+   15         | call_stmt
+   16         | addsub
+
+   17 call_stmt: type dec_call_args
+   18          | call_name dec_call_args
+   19          | call_name OP_LPAREN OP_RPAREN
+   20          | call_name
+
+   21 call_name: type OP_DOT type
+   22          | call_name OP_DOT type
+
+   23 dec_call_args: OP_LPAREN call_args OP_RPAREN
+
+   24 call_args: reg_stmt OP_COMMA call_args
+   25          | reg_stmt
+   26          | ε
+
+   27 return_stmt: KW_RETURN return_value
+
+   28 return_value: addsub
+   29             | call_stmt
+   30             | tf
+
+   31 tf: addsub OP_EQUAL addsub
+   32   | addsub OP_GT addsub
+   33   | addsub OP_LT addsub
+   34   | addsub OP_GTEQU addsub
+   35   | addsub OP_LTEQU addsub
+
+   36 func: KW_FUNC type declare_arg return_type stmt_list
+
+   37 declare_arg: OP_LPAREN arg_list OP_RPAREN
+
+   38 arg_list: arg
+   39         | arg OP_COMMA arg_list
+   40         | ε
+
+   41 arg: type OP_COLON type
+
+   42 type: ID
+
+   43 return_type: OP_COLON type
+   44            | ε
+
+   45 stmt_list: OP_LBRACE stmt_list
+   46          | stmt stmt_list
+   47          | OP_RBRACE
+
+   48 assign: type OP_ASSIGN reg_stmt
+   49       | call_stmt OP_ASSIGN reg_stmt
+
+   50 addsub: addsub OP_PLUS muldiv
+   51       | addsub OP_MINUS muldiv
+   52       | muldiv
+
+   53 muldiv: muldiv OP_MULT posneg
+   54       | muldiv OP_DIVF posneg
+   55       | posneg
+
+   56 posneg: type
+   57       | L_STRING
+   58       | L_INTEGER
+   59       | OP_PLUS posneg
+   60       | OP_MINUS posneg
+   61       | OP_LPAREN addsub OP_RPAREN
+
+   62 import_stmt: KW_IMPORT import_stmt
+   63            | type
+
+   64 if_stmt: matched_if
+   65        | open_if
+
+   66 matched_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list KW_ELSE stmt_list
+   67           | KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list
+
+   68 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt
+   69        | KW_IF OP_LPAREN reg_stmt OP_RPAREN open_if
+
+   70 class_stmt: KW_CLASS type inherit_type stmt_list
+
+   71 inherit_type: OP_COLON type
+   72             | ε
+
+   73 while_stmt: KW_WHILE OP_LPAREN reg_stmt OP_RPAREN stmt_list
+
+   74 assign_let: OP_ASSIGN reg_stmt
+
+   75 declare: KW_LET declare declare
+   76        | KW_LET declare assign_let
+   77        | KW_LET declare declare assign_let
+   78        | OP_COLON declare
+   79        | type
 
 
 Sabit simgeler, iÃ§inde geÃ§tikleri kurallarla birlikte
 
     $end (0) 0
     error (256)
-    REJECTED (258)
+    OP_LPAREN (258) 19 23 37 61 66 67 68 69 73
+    OP_RPAREN (259) 19 23 37 61 66 67 68 69 73
+    OP_PLUS (260) 50 59
+    OP_MINUS (261) 51 60
+    OP_DIVF (262) 54
+    OP_MULT (263) 53
+    OP_DOT (264) 21 22
+    OP_COLON (265) 41 43 71 78
+    OP_COMMA (266) 24 39
+    OP_SEMCOL (267) 5 6 7 8 9 10 11 12
+    OP_ASSIGN (268) 48 49 74
+    OP_LBRACE (269) 45
+    OP_RBRACE (270) 47
+    OP_EQUAL (271) 31
+    OP_GT (272) 32
+    OP_LT (273) 33
+    OP_GTEQU (274) 34
+    OP_LTEQU (275) 35
+    KW_LET (276) 75 76 77
+    KW_FUNC (277) 36
+    KW_IMPORT (278) 62
+    KW_IF (279) 66 67 68 69
+    KW_ELSE (280) 66
+    KW_CLASS (281) 70
+    KW_WHILE (282) 73
+    KW_RETURN (283) 27
+    L_STRING (284) 57
+    ID (285) 42
+    L_INTEGER (286) 58
+    REJECTED (287)
 
 
 Sabit simgeler, iÃ§inde geÃ§tikleri kurallarla birlikte
 
-    $accept (4)
+    $accept (33)
         on left: 0
-    stmt (5)
-        on left: 1
+    module (34)
+        on left: 1 2
         on right: 0
+    module_stmt (35)
+        on left: 3 4
+        on right: 2 3
+    stmt (36)
+        on left: 5 6 7 8 9 10 11 12
+        on right: 3 46
+    reg_stmt (37)
+        on left: 13 14 15 16
+        on right: 12 24 25 48 49 66 67 68 69 73 74
+    call_stmt (38)
+        on left: 17 18 19 20
+        on right: 15 29 49
+    call_name (39)
+        on left: 21 22
+        on right: 18 19 20 22
+    dec_call_args (40)
+        on left: 23
+        on right: 17 18
+    call_args (41)
+        on left: 24 25 26
+        on right: 23 24
+    return_stmt (42)
+        on left: 27
+        on right: 11
+    return_value (43)
+        on left: 28 29 30
+        on right: 27
+    tf (44)
+        on left: 31 32 33 34 35
+        on right: 13 30
+    func (45)
+        on left: 36
+        on right: 5
+    declare_arg (46)
+        on left: 37
+        on right: 36
+    arg_list (47)
+        on left: 38 39 40
+        on right: 37 39
+    arg (48)
+        on left: 41
+        on right: 38 39
+    type (49)
+        on left: 42
+        on right: 17 21 22 36 41 43 48 56 63 70 71 79
+    return_type (50)
+        on left: 43 44
+        on right: 36
+    stmt_list (51)
+        on left: 45 46 47
+        on right: 36 45 46 66 67 70 73
+    assign (52)
+        on left: 48 49
+        on right: 14
+    addsub (53)
+        on left: 50 51 52
+        on right: 16 28 31 32 33 34 35 50 51 61
+    muldiv (54)
+        on left: 53 54 55
+        on right: 50 51 52 53 54
+    posneg (55)
+        on left: 56 57 58 59 60 61
+        on right: 53 54 55 59 60
+    import_stmt (56)
+        on left: 62 63
+        on right: 6 62
+    if_stmt (57)
+        on left: 64 65
+        on right: 7 68
+    matched_if (58)
+        on left: 66 67
+        on right: 64
+    open_if (59)
+        on left: 68 69
+        on right: 65 69
+    class_stmt (60)
+        on left: 70
+        on right: 8
+    inherit_type (61)
+        on left: 71 72
+        on right: 70
+    while_stmt (62)
+        on left: 73
+        on right: 9
+    assign_let (63)
+        on left: 74
+        on right: 76 77
+    declare (64)
+        on left: 75 76 77 78 79
+        on right: 10 75 76 77 78
 
 
 Durum 0
 
-    0 $accept: • stmt $end
+    0 $accept: • module $end
 
-    $Ã¶ntanÄ±mlÄ±  kural 1 (stmt) ile indirgeme
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
 
-    stmt  durum 1'ye git
+    $end           kural 1 (module) ile indirgeme
+    $end           [kural 4 (module_stmt) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 1 (module) ile indirgeme
+
+    module       durum 15'ye git
+    module_stmt  durum 16'ye git
+    stmt         durum 17'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+    reduce/reduce conflict on token $end:
+        1 module: ε •
+        4 module_stmt: ε •
+      Example: •
+      First reduce derivation
+        module
+        ↳ 1: ε •
+      Second reduce derivation
+        module
+        ↳ 2: module_stmt
+             ↳ 4: ε •
+
 
 
 Durum 1
 
-    0 $accept: stmt • $end
+   61 posneg: OP_LPAREN • addsub OP_RPAREN
 
-    $end  Ã¶tele, ve durum 2'ye git
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    addsub  durum 37'ye git
+    muldiv  durum 27'ye git
+    posneg  durum 28'ye git
 
 
 Durum 2
 
-    0 $accept: stmt $end •
+   59 posneg: OP_PLUS • posneg
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    posneg  durum 38'ye git
+
+
+Durum 3
+
+   60 posneg: OP_MINUS • posneg
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    posneg  durum 39'ye git
+
+
+Durum 4
+
+   78 declare: OP_COLON • declare
+
+    OP_COLON  Ã¶tele, ve durum 4'ye git
+    KW_LET    Ã¶tele, ve durum 5'ye git
+    ID        Ã¶tele, ve durum 13'ye git
+
+    type     durum 40'ye git
+    declare  durum 41'ye git
+
+
+Durum 5
+
+   75 declare: KW_LET • declare declare
+   76        | KW_LET • declare assign_let
+   77        | KW_LET • declare declare assign_let
+
+    OP_COLON  Ã¶tele, ve durum 4'ye git
+    KW_LET    Ã¶tele, ve durum 5'ye git
+    ID        Ã¶tele, ve durum 13'ye git
+
+    type     durum 40'ye git
+    declare  durum 42'ye git
+
+
+Durum 6
+
+   36 func: KW_FUNC • type declare_arg return_type stmt_list
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 43'ye git
+
+
+Durum 7
+
+   62 import_stmt: KW_IMPORT • import_stmt
+
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+
+    type         durum 44'ye git
+    import_stmt  durum 45'ye git
+
+
+Durum 8
+
+   66 matched_if: KW_IF • OP_LPAREN reg_stmt OP_RPAREN stmt_list KW_ELSE stmt_list
+   67           | KW_IF • OP_LPAREN reg_stmt OP_RPAREN stmt_list
+   68 open_if: KW_IF • OP_LPAREN reg_stmt OP_RPAREN if_stmt
+   69        | KW_IF • OP_LPAREN reg_stmt OP_RPAREN open_if
+
+    OP_LPAREN  Ã¶tele, ve durum 46'ye git
+
+
+Durum 9
+
+   70 class_stmt: KW_CLASS • type inherit_type stmt_list
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 47'ye git
+
+
+Durum 10
+
+   73 while_stmt: KW_WHILE • OP_LPAREN reg_stmt OP_RPAREN stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 48'ye git
+
+
+Durum 11
+
+   27 return_stmt: KW_RETURN • return_value
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    call_stmt     durum 49'ye git
+    call_name     durum 20'ye git
+    return_value  durum 50'ye git
+    tf            durum 51'ye git
+    type          durum 52'ye git
+    addsub        durum 53'ye git
+    muldiv        durum 27'ye git
+    posneg        durum 28'ye git
+
+
+Durum 12
+
+   57 posneg: L_STRING •
+
+    $Ã¶ntanÄ±mlÄ±  kural 57 (posneg) ile indirgeme
+
+
+Durum 13
+
+   42 type: ID •
+
+    $Ã¶ntanÄ±mlÄ±  kural 42 (type) ile indirgeme
+
+
+Durum 14
+
+   58 posneg: L_INTEGER •
+
+    $Ã¶ntanÄ±mlÄ±  kural 58 (posneg) ile indirgeme
+
+
+Durum 15
+
+    0 $accept: module • $end
+
+    $end  Ã¶tele, ve durum 54'ye git
+
+
+Durum 16
+
+    2 module: module_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 2 (module) ile indirgeme
+
+
+Durum 17
+
+    3 module_stmt: stmt • module_stmt
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 4 (module_stmt) ile indirgeme
+
+    module_stmt  durum 55'ye git
+    stmt         durum 17'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 18
+
+   12 stmt: reg_stmt • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 56'ye git
+
+
+Durum 19
+
+   15 reg_stmt: call_stmt •
+   49 assign: call_stmt • OP_ASSIGN reg_stmt
+
+    OP_ASSIGN  Ã¶tele, ve durum 57'ye git
+
+    OP_ASSIGN      [kural 15 (reg_stmt) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 15 (reg_stmt) ile indirgeme
+
+    shift/reduce conflict on token OP_ASSIGN:
+       15 reg_stmt: call_stmt •
+       49 assign: call_stmt • OP_ASSIGN reg_stmt
+      Example: KW_LET declare KW_LET declare OP_ASSIGN call_stmt • OP_ASSIGN reg_stmt
+      Shift derivation
+        declare
+        ↳ 75: KW_LET declare declare
+                             ↳ 76: KW_LET declare assign_let
+                                                  ↳ 74: OP_ASSIGN reg_stmt
+                                                                  ↳ 14: assign
+                                                                        ↳ 49: call_stmt • OP_ASSIGN reg_stmt
+      Reduce derivation
+        declare
+        ↳ 77: KW_LET declare declare                                                assign_let
+                             ↳ 76: KW_LET declare assign_let                        ↳ 74: OP_ASSIGN reg_stmt
+                                                  ↳ 74: OP_ASSIGN reg_stmt
+                                                                  ↳ 15: call_stmt •
+
+
+
+Durum 20
+
+   18 call_stmt: call_name • dec_call_args
+   19          | call_name • OP_LPAREN OP_RPAREN
+   20          | call_name •
+   22 call_name: call_name • OP_DOT type
+
+    OP_LPAREN  Ã¶tele, ve durum 58'ye git
+    OP_DOT     Ã¶tele, ve durum 59'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 20 (call_stmt) ile indirgeme
+
+    dec_call_args  durum 60'ye git
+
+
+Durum 21
+
+   11 stmt: return_stmt • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 61'ye git
+
+
+Durum 22
+
+   13 reg_stmt: tf •
+
+    $Ã¶ntanÄ±mlÄ±  kural 13 (reg_stmt) ile indirgeme
+
+
+Durum 23
+
+    5 stmt: func • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 62'ye git
+
+
+Durum 24
+
+   17 call_stmt: type • dec_call_args
+   21 call_name: type • OP_DOT type
+   48 assign: type • OP_ASSIGN reg_stmt
+   56 posneg: type •
+   63 import_stmt: type •
+   79 declare: type •
+
+    OP_LPAREN  Ã¶tele, ve durum 63'ye git
+    OP_DOT     Ã¶tele, ve durum 64'ye git
+    OP_ASSIGN  Ã¶tele, ve durum 65'ye git
+
+    OP_SEMCOL      kural 56 (posneg) ile indirgeme
+    OP_SEMCOL      [kural 63 (import_stmt) ile indirgeme]
+    OP_SEMCOL      [kural 79 (declare) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 56 (posneg) ile indirgeme
+
+    dec_call_args  durum 66'ye git
+
+    reduce/reduce conflict on token OP_SEMCOL:
+       56 posneg: type •
+       63 import_stmt: type •
+      Example: type • OP_SEMCOL
+      First reduce derivation
+        stmt
+        ↳ 12: reg_stmt                       OP_SEMCOL
+              ↳ 16: addsub
+                    ↳ 52: muldiv
+                          ↳ 55: posneg
+                                ↳ 56: type •
+      Second reduce derivation
+        stmt
+        ↳ 6: import_stmt  OP_SEMCOL
+             ↳ 63: type •
+
+    reduce/reduce conflict on token OP_SEMCOL:
+       56 posneg: type •
+       79 declare: type •
+      Example: type • OP_SEMCOL
+      First reduce derivation
+        stmt
+        ↳ 12: reg_stmt                       OP_SEMCOL
+              ↳ 16: addsub
+                    ↳ 52: muldiv
+                          ↳ 55: posneg
+                                ↳ 56: type •
+      Second reduce derivation
+        stmt
+        ↳ 10: declare      OP_SEMCOL
+              ↳ 79: type •
+
+    reduce/reduce conflict on token OP_SEMCOL:
+       63 import_stmt: type •
+       79 declare: type •
+      Example: type • OP_SEMCOL
+      First reduce derivation
+        stmt
+        ↳ 6: import_stmt  OP_SEMCOL
+             ↳ 63: type •
+      Second reduce derivation
+        stmt
+        ↳ 10: declare      OP_SEMCOL
+              ↳ 79: type •
+
+
+
+Durum 25
+
+   14 reg_stmt: assign •
+
+    $Ã¶ntanÄ±mlÄ±  kural 14 (reg_stmt) ile indirgeme
+
+
+Durum 26
+
+   16 reg_stmt: addsub •
+   31 tf: addsub • OP_EQUAL addsub
+   32   | addsub • OP_GT addsub
+   33   | addsub • OP_LT addsub
+   34   | addsub • OP_GTEQU addsub
+   35   | addsub • OP_LTEQU addsub
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+    OP_EQUAL  Ã¶tele, ve durum 69'ye git
+    OP_GT     Ã¶tele, ve durum 70'ye git
+    OP_LT     Ã¶tele, ve durum 71'ye git
+    OP_GTEQU  Ã¶tele, ve durum 72'ye git
+    OP_LTEQU  Ã¶tele, ve durum 73'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 16 (reg_stmt) ile indirgeme
+
+
+Durum 27
+
+   52 addsub: muldiv •
+   53 muldiv: muldiv • OP_MULT posneg
+   54       | muldiv • OP_DIVF posneg
+
+    OP_DIVF  Ã¶tele, ve durum 74'ye git
+    OP_MULT  Ã¶tele, ve durum 75'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 52 (addsub) ile indirgeme
+
+
+Durum 28
+
+   55 muldiv: posneg •
+
+    $Ã¶ntanÄ±mlÄ±  kural 55 (muldiv) ile indirgeme
+
+
+Durum 29
+
+    6 stmt: import_stmt • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 76'ye git
+
+
+Durum 30
+
+    7 stmt: if_stmt • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 77'ye git
+
+
+Durum 31
+
+   64 if_stmt: matched_if •
+
+    $Ã¶ntanÄ±mlÄ±  kural 64 (if_stmt) ile indirgeme
+
+
+Durum 32
+
+   65 if_stmt: open_if •
+
+    $Ã¶ntanÄ±mlÄ±  kural 65 (if_stmt) ile indirgeme
+
+
+Durum 33
+
+    8 stmt: class_stmt • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 78'ye git
+
+
+Durum 34
+
+    9 stmt: while_stmt • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 79'ye git
+
+
+Durum 35
+
+   10 stmt: declare • OP_SEMCOL
+
+    OP_SEMCOL  Ã¶tele, ve durum 80'ye git
+
+
+Durum 36
+
+   56 posneg: type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 56 (posneg) ile indirgeme
+
+
+Durum 37
+
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+   61 posneg: OP_LPAREN addsub • OP_RPAREN
+
+    OP_RPAREN  Ã¶tele, ve durum 81'ye git
+    OP_PLUS    Ã¶tele, ve durum 67'ye git
+    OP_MINUS   Ã¶tele, ve durum 68'ye git
+
+
+Durum 38
+
+   59 posneg: OP_PLUS posneg •
+
+    $Ã¶ntanÄ±mlÄ±  kural 59 (posneg) ile indirgeme
+
+
+Durum 39
+
+   60 posneg: OP_MINUS posneg •
+
+    $Ã¶ntanÄ±mlÄ±  kural 60 (posneg) ile indirgeme
+
+
+Durum 40
+
+   79 declare: type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 79 (declare) ile indirgeme
+
+
+Durum 41
+
+   78 declare: OP_COLON declare •
+
+    $Ã¶ntanÄ±mlÄ±  kural 78 (declare) ile indirgeme
+
+
+Durum 42
+
+   75 declare: KW_LET declare • declare
+   76        | KW_LET declare • assign_let
+   77        | KW_LET declare • declare assign_let
+
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_ASSIGN  Ã¶tele, ve durum 82'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+
+    type        durum 40'ye git
+    assign_let  durum 83'ye git
+    declare     durum 84'ye git
+
+
+Durum 43
+
+   36 func: KW_FUNC type • declare_arg return_type stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 85'ye git
+
+    declare_arg  durum 86'ye git
+
+
+Durum 44
+
+   63 import_stmt: type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 63 (import_stmt) ile indirgeme
+
+
+Durum 45
+
+   62 import_stmt: KW_IMPORT import_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 62 (import_stmt) ile indirgeme
+
+
+Durum 46
+
+   66 matched_if: KW_IF OP_LPAREN • reg_stmt OP_RPAREN stmt_list KW_ELSE stmt_list
+   67           | KW_IF OP_LPAREN • reg_stmt OP_RPAREN stmt_list
+   68 open_if: KW_IF OP_LPAREN • reg_stmt OP_RPAREN if_stmt
+   69        | KW_IF OP_LPAREN • reg_stmt OP_RPAREN open_if
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    reg_stmt   durum 87'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 47
+
+   70 class_stmt: KW_CLASS type • inherit_type stmt_list
+
+    OP_COLON  Ã¶tele, ve durum 89'ye git
+
+    OP_COLON       [kural 72 (inherit_type) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 72 (inherit_type) ile indirgeme
+
+    inherit_type  durum 90'ye git
+
+    shift/reduce conflict on token OP_COLON:
+       72 inherit_type: ε •
+       71 inherit_type: • OP_COLON type
+      First example: KW_CLASS • OP_COLON type stmt_list
+      Shift derivation
+        class_stmt
+        ↳ 70: KW_CLASS inherit_type          stmt_list
+                       ↳ 71: • OP_COLON type
+      Second example: • OP_COLON type stmt_list
+      Reduce derivation
+        class_stmt
+        ↳ 70: inherit_type OP_COLON type stmt_list
+              ↳ 72: ε •                  ↳ 46: stmt_list
+
+
+
+Durum 48
+
+   73 while_stmt: KW_WHILE OP_LPAREN • reg_stmt OP_RPAREN stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    reg_stmt   durum 91'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 49
+
+   29 return_value: call_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 29 (return_value) ile indirgeme
+
+
+Durum 50
+
+   27 return_stmt: KW_RETURN return_value •
+
+    $Ã¶ntanÄ±mlÄ±  kural 27 (return_stmt) ile indirgeme
+
+
+Durum 51
+
+   30 return_value: tf •
+
+    $Ã¶ntanÄ±mlÄ±  kural 30 (return_value) ile indirgeme
+
+
+Durum 52
+
+   17 call_stmt: type • dec_call_args
+   21 call_name: type • OP_DOT type
+   56 posneg: type •
+
+    OP_LPAREN  Ã¶tele, ve durum 63'ye git
+    OP_DOT     Ã¶tele, ve durum 64'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 56 (posneg) ile indirgeme
+
+    dec_call_args  durum 66'ye git
+
+
+Durum 53
+
+   28 return_value: addsub •
+   31 tf: addsub • OP_EQUAL addsub
+   32   | addsub • OP_GT addsub
+   33   | addsub • OP_LT addsub
+   34   | addsub • OP_GTEQU addsub
+   35   | addsub • OP_LTEQU addsub
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+    OP_EQUAL  Ã¶tele, ve durum 69'ye git
+    OP_GT     Ã¶tele, ve durum 70'ye git
+    OP_LT     Ã¶tele, ve durum 71'ye git
+    OP_GTEQU  Ã¶tele, ve durum 72'ye git
+    OP_LTEQU  Ã¶tele, ve durum 73'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 28 (return_value) ile indirgeme
+
+
+Durum 54
+
+    0 $accept: module $end •
 
     $Ã¶ntanÄ±mlÄ±  onayla
+
+
+Durum 55
+
+    3 module_stmt: stmt module_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 3 (module_stmt) ile indirgeme
+
+
+Durum 56
+
+   12 stmt: reg_stmt OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 12 (stmt) ile indirgeme
+
+
+Durum 57
+
+   49 assign: call_stmt OP_ASSIGN • reg_stmt
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    reg_stmt   durum 92'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 58
+
+   19 call_stmt: call_name OP_LPAREN • OP_RPAREN
+   23 dec_call_args: OP_LPAREN • call_args OP_RPAREN
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_RPAREN  Ã¶tele, ve durum 93'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    OP_RPAREN  [kural 26 (call_args) ile indirgeme]
+
+    reg_stmt   durum 94'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    call_args  durum 95'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+    shift/reduce conflict on token OP_RPAREN:
+       26 call_args: ε •
+       19 call_stmt: call_name OP_LPAREN • OP_RPAREN
+      Example: call_name OP_LPAREN • OP_RPAREN
+      Shift derivation
+        call_stmt
+        ↳ 19: call_name OP_LPAREN • OP_RPAREN
+      Reduce derivation
+        call_stmt
+        ↳ 18: call_name dec_call_args
+                        ↳ 23: OP_LPAREN call_args OP_RPAREN
+                                        ↳ 26: ε •
+
+
+
+Durum 59
+
+   22 call_name: call_name OP_DOT • type
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 96'ye git
+
+
+Durum 60
+
+   18 call_stmt: call_name dec_call_args •
+
+    $Ã¶ntanÄ±mlÄ±  kural 18 (call_stmt) ile indirgeme
+
+
+Durum 61
+
+   11 stmt: return_stmt OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 11 (stmt) ile indirgeme
+
+
+Durum 62
+
+    5 stmt: func OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 5 (stmt) ile indirgeme
+
+
+Durum 63
+
+   23 dec_call_args: OP_LPAREN • call_args OP_RPAREN
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 26 (call_args) ile indirgeme
+
+    reg_stmt   durum 94'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    call_args  durum 95'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 64
+
+   21 call_name: type OP_DOT • type
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 97'ye git
+
+
+Durum 65
+
+   48 assign: type OP_ASSIGN • reg_stmt
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    reg_stmt   durum 98'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 66
+
+   17 call_stmt: type dec_call_args •
+
+    $Ã¶ntanÄ±mlÄ±  kural 17 (call_stmt) ile indirgeme
+
+
+Durum 67
+
+   50 addsub: addsub OP_PLUS • muldiv
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    muldiv  durum 99'ye git
+    posneg  durum 28'ye git
+
+
+Durum 68
+
+   51 addsub: addsub OP_MINUS • muldiv
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    muldiv  durum 100'ye git
+    posneg  durum 28'ye git
+
+
+Durum 69
+
+   31 tf: addsub OP_EQUAL • addsub
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    addsub  durum 101'ye git
+    muldiv  durum 27'ye git
+    posneg  durum 28'ye git
+
+
+Durum 70
+
+   32 tf: addsub OP_GT • addsub
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    addsub  durum 102'ye git
+    muldiv  durum 27'ye git
+    posneg  durum 28'ye git
+
+
+Durum 71
+
+   33 tf: addsub OP_LT • addsub
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    addsub  durum 103'ye git
+    muldiv  durum 27'ye git
+    posneg  durum 28'ye git
+
+
+Durum 72
+
+   34 tf: addsub OP_GTEQU • addsub
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    addsub  durum 104'ye git
+    muldiv  durum 27'ye git
+    posneg  durum 28'ye git
+
+
+Durum 73
+
+   35 tf: addsub OP_LTEQU • addsub
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    addsub  durum 105'ye git
+    muldiv  durum 27'ye git
+    posneg  durum 28'ye git
+
+
+Durum 74
+
+   54 muldiv: muldiv OP_DIVF • posneg
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    posneg  durum 106'ye git
+
+
+Durum 75
+
+   53 muldiv: muldiv OP_MULT • posneg
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    type    durum 36'ye git
+    posneg  durum 107'ye git
+
+
+Durum 76
+
+    6 stmt: import_stmt OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 6 (stmt) ile indirgeme
+
+
+Durum 77
+
+    7 stmt: if_stmt OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 7 (stmt) ile indirgeme
+
+
+Durum 78
+
+    8 stmt: class_stmt OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 8 (stmt) ile indirgeme
+
+
+Durum 79
+
+    9 stmt: while_stmt OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 9 (stmt) ile indirgeme
+
+
+Durum 80
+
+   10 stmt: declare OP_SEMCOL •
+
+    $Ã¶ntanÄ±mlÄ±  kural 10 (stmt) ile indirgeme
+
+
+Durum 81
+
+   61 posneg: OP_LPAREN addsub OP_RPAREN •
+
+    $Ã¶ntanÄ±mlÄ±  kural 61 (posneg) ile indirgeme
+
+
+Durum 82
+
+   74 assign_let: OP_ASSIGN • reg_stmt
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    reg_stmt   durum 108'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 83
+
+   76 declare: KW_LET declare assign_let •
+
+    $Ã¶ntanÄ±mlÄ±  kural 76 (declare) ile indirgeme
+
+
+Durum 84
+
+   75 declare: KW_LET declare declare •
+   77        | KW_LET declare declare • assign_let
+
+    OP_ASSIGN  Ã¶tele, ve durum 82'ye git
+
+    OP_ASSIGN      [kural 75 (declare) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 75 (declare) ile indirgeme
+
+    assign_let  durum 109'ye git
+
+    shift/reduce conflict on token OP_ASSIGN:
+       75 declare: KW_LET declare declare •
+       74 assign_let: • OP_ASSIGN reg_stmt
+      Example: KW_LET declare KW_LET declare declare • OP_ASSIGN reg_stmt
+      Shift derivation
+        declare
+        ↳ 75: KW_LET declare declare
+                             ↳ 77: KW_LET declare declare assign_let
+                                                          ↳ 74: • OP_ASSIGN reg_stmt
+      Reduce derivation
+        declare
+        ↳ 77: KW_LET declare declare                        assign_let
+                             ↳ 75: KW_LET declare declare • ↳ 74: OP_ASSIGN reg_stmt
+
+
+
+Durum 85
+
+   37 declare_arg: OP_LPAREN • arg_list OP_RPAREN
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 40 (arg_list) ile indirgeme
+
+    arg_list  durum 110'ye git
+    arg       durum 111'ye git
+    type      durum 112'ye git
+
+
+Durum 86
+
+   36 func: KW_FUNC type declare_arg • return_type stmt_list
+
+    OP_COLON  Ã¶tele, ve durum 113'ye git
+
+    OP_COLON       [kural 44 (return_type) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 44 (return_type) ile indirgeme
+
+    return_type  durum 114'ye git
+
+    shift/reduce conflict on token OP_COLON:
+       44 return_type: ε •
+       43 return_type: • OP_COLON type
+      First example: KW_FUNC type • OP_COLON type stmt_list
+      Shift derivation
+        func
+        ↳ 36: KW_FUNC type return_type           stmt_list
+                           ↳ 43: • OP_COLON type
+      Second example: KW_FUNC • OP_COLON type stmt_list
+      Reduce derivation
+        func
+        ↳ 36: KW_FUNC return_type OP_COLON type stmt_list
+                      ↳ 44: ε •                 ↳ 46: stmt_list
+
+
+
+Durum 87
+
+   66 matched_if: KW_IF OP_LPAREN reg_stmt • OP_RPAREN stmt_list KW_ELSE stmt_list
+   67           | KW_IF OP_LPAREN reg_stmt • OP_RPAREN stmt_list
+   68 open_if: KW_IF OP_LPAREN reg_stmt • OP_RPAREN if_stmt
+   69        | KW_IF OP_LPAREN reg_stmt • OP_RPAREN open_if
+
+    OP_RPAREN  Ã¶tele, ve durum 115'ye git
+
+
+Durum 88
+
+   17 call_stmt: type • dec_call_args
+   21 call_name: type • OP_DOT type
+   48 assign: type • OP_ASSIGN reg_stmt
+   56 posneg: type •
+
+    OP_LPAREN  Ã¶tele, ve durum 63'ye git
+    OP_DOT     Ã¶tele, ve durum 64'ye git
+    OP_ASSIGN  Ã¶tele, ve durum 65'ye git
+
+    OP_ASSIGN      [kural 56 (posneg) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 56 (posneg) ile indirgeme
+
+    dec_call_args  durum 66'ye git
+
+    shift/reduce conflict on token OP_ASSIGN:
+       56 posneg: type •
+       48 assign: type • OP_ASSIGN reg_stmt
+      Example: KW_LET declare KW_LET declare OP_ASSIGN type • OP_ASSIGN reg_stmt
+      Shift derivation
+        declare
+        ↳ 75: KW_LET declare declare
+                             ↳ 76: KW_LET declare assign_let
+                                                  ↳ 74: OP_ASSIGN reg_stmt
+                                                                  ↳ 14: assign
+                                                                        ↳ 48: type • OP_ASSIGN reg_stmt
+      Reduce derivation
+        declare
+        ↳ 77: KW_LET declare declare                                                             assign_let
+                             ↳ 76: KW_LET declare assign_let                                     ↳ 74: OP_ASSIGN reg_stmt
+                                                  ↳ 74: OP_ASSIGN reg_stmt
+                                                                  ↳ 16: addsub
+                                                                        ↳ 52: muldiv
+                                                                              ↳ 55: posneg
+                                                                                    ↳ 56: type •
+
+
+
+Durum 89
+
+   71 inherit_type: OP_COLON • type
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 116'ye git
+
+
+Durum 90
+
+   70 class_stmt: KW_CLASS type inherit_type • stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 120'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 91
+
+   73 while_stmt: KW_WHILE OP_LPAREN reg_stmt • OP_RPAREN stmt_list
+
+    OP_RPAREN  Ã¶tele, ve durum 121'ye git
+
+
+Durum 92
+
+   49 assign: call_stmt OP_ASSIGN reg_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 49 (assign) ile indirgeme
+
+
+Durum 93
+
+   19 call_stmt: call_name OP_LPAREN OP_RPAREN •
+
+    $Ã¶ntanÄ±mlÄ±  kural 19 (call_stmt) ile indirgeme
+
+
+Durum 94
+
+   24 call_args: reg_stmt • OP_COMMA call_args
+   25          | reg_stmt •
+
+    OP_COMMA  Ã¶tele, ve durum 122'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 25 (call_args) ile indirgeme
+
+
+Durum 95
+
+   23 dec_call_args: OP_LPAREN call_args • OP_RPAREN
+
+    OP_RPAREN  Ã¶tele, ve durum 123'ye git
+
+
+Durum 96
+
+   22 call_name: call_name OP_DOT type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 22 (call_name) ile indirgeme
+
+
+Durum 97
+
+   21 call_name: type OP_DOT type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 21 (call_name) ile indirgeme
+
+
+Durum 98
+
+   48 assign: type OP_ASSIGN reg_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 48 (assign) ile indirgeme
+
+
+Durum 99
+
+   50 addsub: addsub OP_PLUS muldiv •
+   53 muldiv: muldiv • OP_MULT posneg
+   54       | muldiv • OP_DIVF posneg
+
+    OP_DIVF  Ã¶tele, ve durum 74'ye git
+    OP_MULT  Ã¶tele, ve durum 75'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 50 (addsub) ile indirgeme
+
+
+Durum 100
+
+   51 addsub: addsub OP_MINUS muldiv •
+   53 muldiv: muldiv • OP_MULT posneg
+   54       | muldiv • OP_DIVF posneg
+
+    OP_DIVF  Ã¶tele, ve durum 74'ye git
+    OP_MULT  Ã¶tele, ve durum 75'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 51 (addsub) ile indirgeme
+
+
+Durum 101
+
+   31 tf: addsub OP_EQUAL addsub •
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 31 (tf) ile indirgeme
+
+
+Durum 102
+
+   32 tf: addsub OP_GT addsub •
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 32 (tf) ile indirgeme
+
+
+Durum 103
+
+   33 tf: addsub OP_LT addsub •
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 33 (tf) ile indirgeme
+
+
+Durum 104
+
+   34 tf: addsub OP_GTEQU addsub •
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 34 (tf) ile indirgeme
+
+
+Durum 105
+
+   35 tf: addsub OP_LTEQU addsub •
+   50 addsub: addsub • OP_PLUS muldiv
+   51       | addsub • OP_MINUS muldiv
+
+    OP_PLUS   Ã¶tele, ve durum 67'ye git
+    OP_MINUS  Ã¶tele, ve durum 68'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 35 (tf) ile indirgeme
+
+
+Durum 106
+
+   54 muldiv: muldiv OP_DIVF posneg •
+
+    $Ã¶ntanÄ±mlÄ±  kural 54 (muldiv) ile indirgeme
+
+
+Durum 107
+
+   53 muldiv: muldiv OP_MULT posneg •
+
+    $Ã¶ntanÄ±mlÄ±  kural 53 (muldiv) ile indirgeme
+
+
+Durum 108
+
+   74 assign_let: OP_ASSIGN reg_stmt •
+
+    $Ã¶ntanÄ±mlÄ±  kural 74 (assign_let) ile indirgeme
+
+
+Durum 109
+
+   77 declare: KW_LET declare declare assign_let •
+
+    $Ã¶ntanÄ±mlÄ±  kural 77 (declare) ile indirgeme
+
+
+Durum 110
+
+   37 declare_arg: OP_LPAREN arg_list • OP_RPAREN
+
+    OP_RPAREN  Ã¶tele, ve durum 124'ye git
+
+
+Durum 111
+
+   38 arg_list: arg •
+   39         | arg • OP_COMMA arg_list
+
+    OP_COMMA  Ã¶tele, ve durum 125'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 38 (arg_list) ile indirgeme
+
+
+Durum 112
+
+   41 arg: type • OP_COLON type
+
+    OP_COLON  Ã¶tele, ve durum 126'ye git
+
+
+Durum 113
+
+   43 return_type: OP_COLON • type
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 127'ye git
+
+
+Durum 114
+
+   36 func: KW_FUNC type declare_arg return_type • stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 128'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 115
+
+   66 matched_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN • stmt_list KW_ELSE stmt_list
+   67           | KW_IF OP_LPAREN reg_stmt OP_RPAREN • stmt_list
+   68 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN • if_stmt
+   69        | KW_IF OP_LPAREN reg_stmt OP_RPAREN • open_if
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 129'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 130'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 131'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 116
+
+   71 inherit_type: OP_COLON type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 71 (inherit_type) ile indirgeme
+
+
+Durum 117
+
+   45 stmt_list: OP_LBRACE • stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 132'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 118
+
+   47 stmt_list: OP_RBRACE •
+
+    $Ã¶ntanÄ±mlÄ±  kural 47 (stmt_list) ile indirgeme
+
+
+Durum 119
+
+   46 stmt_list: stmt • stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 133'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 120
+
+   70 class_stmt: KW_CLASS type inherit_type stmt_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 70 (class_stmt) ile indirgeme
+
+
+Durum 121
+
+   73 while_stmt: KW_WHILE OP_LPAREN reg_stmt OP_RPAREN • stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 134'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 122
+
+   24 call_args: reg_stmt OP_COMMA • call_args
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 26 (call_args) ile indirgeme
+
+    reg_stmt   durum 94'ye git
+    call_stmt  durum 19'ye git
+    call_name  durum 20'ye git
+    call_args  durum 135'ye git
+    tf         durum 22'ye git
+    type       durum 88'ye git
+    assign     durum 25'ye git
+    addsub     durum 26'ye git
+    muldiv     durum 27'ye git
+    posneg     durum 28'ye git
+
+
+Durum 123
+
+   23 dec_call_args: OP_LPAREN call_args OP_RPAREN •
+
+    $Ã¶ntanÄ±mlÄ±  kural 23 (dec_call_args) ile indirgeme
+
+
+Durum 124
+
+   37 declare_arg: OP_LPAREN arg_list OP_RPAREN •
+
+    $Ã¶ntanÄ±mlÄ±  kural 37 (declare_arg) ile indirgeme
+
+
+Durum 125
+
+   39 arg_list: arg OP_COMMA • arg_list
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 40 (arg_list) ile indirgeme
+
+    arg_list  durum 136'ye git
+    arg       durum 111'ye git
+    type      durum 112'ye git
+
+
+Durum 126
+
+   41 arg: type OP_COLON • type
+
+    ID  Ã¶tele, ve durum 13'ye git
+
+    type  durum 137'ye git
+
+
+Durum 127
+
+   43 return_type: OP_COLON type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 43 (return_type) ile indirgeme
+
+
+Durum 128
+
+   36 func: KW_FUNC type declare_arg return_type stmt_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 36 (func) ile indirgeme
+
+
+Durum 129
+
+   66 matched_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list • KW_ELSE stmt_list
+   67           | KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list •
+
+    KW_ELSE  Ã¶tele, ve durum 138'ye git
+
+    $Ã¶ntanÄ±mlÄ±  kural 67 (matched_if) ile indirgeme
+
+
+Durum 130
+
+    7 stmt: if_stmt • OP_SEMCOL
+   68 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt •
+
+    OP_SEMCOL  Ã¶tele, ve durum 77'ye git
+
+    OP_SEMCOL  [kural 68 (open_if) ile indirgeme]
+
+    shift/reduce conflict on token OP_SEMCOL:
+       68 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt •
+        7 stmt: if_stmt • OP_SEMCOL
+      Example: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt • OP_SEMCOL stmt_list
+      Shift derivation
+        if_stmt
+        ↳ 64: matched_if
+              ↳ 67: KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list
+                                                       ↳ 46: stmt                     stmt_list
+                                                             ↳ 7: if_stmt • OP_SEMCOL
+      Reduce derivation
+        stmt_list
+        ↳ 46: stmt                                                                    stmt_list
+              ↳ 7: if_stmt                                                  OP_SEMCOL
+                   ↳ 65: open_if
+                         ↳ 68: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt •
+
+
+
+Durum 131
+
+   65 if_stmt: open_if •
+   69 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN open_if •
+
+    OP_SEMCOL      kural 65 (if_stmt) ile indirgeme
+    OP_SEMCOL      [kural 69 (open_if) ile indirgeme]
+    $Ã¶ntanÄ±mlÄ±  kural 65 (if_stmt) ile indirgeme
+
+    reduce/reduce conflict on token OP_SEMCOL:
+       65 if_stmt: open_if •
+       69 open_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN open_if •
+      Example: KW_IF OP_LPAREN reg_stmt OP_RPAREN open_if •
+      First reduce derivation
+        open_if
+        ↳ 68: KW_IF OP_LPAREN reg_stmt OP_RPAREN if_stmt
+                                                 ↳ 65: open_if •
+      Second reduce derivation
+        open_if
+        ↳ 69: KW_IF OP_LPAREN reg_stmt OP_RPAREN open_if •
+
+
+
+Durum 132
+
+   45 stmt_list: OP_LBRACE stmt_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 45 (stmt_list) ile indirgeme
+
+
+Durum 133
+
+   46 stmt_list: stmt stmt_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 46 (stmt_list) ile indirgeme
+
+
+Durum 134
+
+   73 while_stmt: KW_WHILE OP_LPAREN reg_stmt OP_RPAREN stmt_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 73 (while_stmt) ile indirgeme
+
+
+Durum 135
+
+   24 call_args: reg_stmt OP_COMMA call_args •
+
+    $Ã¶ntanÄ±mlÄ±  kural 24 (call_args) ile indirgeme
+
+
+Durum 136
+
+   39 arg_list: arg OP_COMMA arg_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 39 (arg_list) ile indirgeme
+
+
+Durum 137
+
+   41 arg: type OP_COLON type •
+
+    $Ã¶ntanÄ±mlÄ±  kural 41 (arg) ile indirgeme
+
+
+Durum 138
+
+   66 matched_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list KW_ELSE • stmt_list
+
+    OP_LPAREN  Ã¶tele, ve durum 1'ye git
+    OP_PLUS    Ã¶tele, ve durum 2'ye git
+    OP_MINUS   Ã¶tele, ve durum 3'ye git
+    OP_COLON   Ã¶tele, ve durum 4'ye git
+    OP_LBRACE  Ã¶tele, ve durum 117'ye git
+    OP_RBRACE  Ã¶tele, ve durum 118'ye git
+    KW_LET     Ã¶tele, ve durum 5'ye git
+    KW_FUNC    Ã¶tele, ve durum 6'ye git
+    KW_IMPORT  Ã¶tele, ve durum 7'ye git
+    KW_IF      Ã¶tele, ve durum 8'ye git
+    KW_CLASS   Ã¶tele, ve durum 9'ye git
+    KW_WHILE   Ã¶tele, ve durum 10'ye git
+    KW_RETURN  Ã¶tele, ve durum 11'ye git
+    L_STRING   Ã¶tele, ve durum 12'ye git
+    ID         Ã¶tele, ve durum 13'ye git
+    L_INTEGER  Ã¶tele, ve durum 14'ye git
+
+    stmt         durum 119'ye git
+    reg_stmt     durum 18'ye git
+    call_stmt    durum 19'ye git
+    call_name    durum 20'ye git
+    return_stmt  durum 21'ye git
+    tf           durum 22'ye git
+    func         durum 23'ye git
+    type         durum 24'ye git
+    stmt_list    durum 139'ye git
+    assign       durum 25'ye git
+    addsub       durum 26'ye git
+    muldiv       durum 27'ye git
+    posneg       durum 28'ye git
+    import_stmt  durum 29'ye git
+    if_stmt      durum 30'ye git
+    matched_if   durum 31'ye git
+    open_if      durum 32'ye git
+    class_stmt   durum 33'ye git
+    while_stmt   durum 34'ye git
+    declare      durum 35'ye git
+
+
+Durum 139
+
+   66 matched_if: KW_IF OP_LPAREN reg_stmt OP_RPAREN stmt_list KW_ELSE stmt_list •
+
+    $Ã¶ntanÄ±mlÄ±  kural 66 (matched_if) ile indirgeme

@@ -1,5 +1,5 @@
 CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/_lexer_gen.cpp \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/_lexer_gen.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -62,7 +62,8 @@ CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/main.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/parser.hpp \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/main.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
@@ -198,7 +199,7 @@ CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -222,11 +223,26 @@ CMakeFiles/kiraz.dir/_lexer_gen.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/cstring \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/core.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/core.h \
  /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/ranges.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/fmt/format.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/parser.hpp \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Literal.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/Token.h \
- /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/token/Operator.h
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/ranges.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/fmt/format.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/parser.hpp \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Literal.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/Token.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Operator.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Id.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwLet.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Func.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwImport.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwIf.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwElse.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwClass.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/KwWhile.h \
+ /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/token/Return.h \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/ranges_algo.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h

@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main
+CMAKE_SOURCE_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_20401892_20401901-main/build
+CMAKE_BINARY_DIR = /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_parser.dir/depend.make
@@ -73,18 +73,18 @@ include CMakeFiles/test_parser.dir/progress.make
 include CMakeFiles/test_parser.dir/flags.make
 
 CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o: CMakeFiles/test_parser.dir/flags.make
-CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o: /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/test/test_parser.cc
+CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o: /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/test/test_parser.cc
 CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o: CMakeFiles/test_parser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o -MF CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o.d -o CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o -c /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/test/test_parser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o -MF CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o.d -o CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.o -c /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/test/test_parser.cc
 
 CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/test/test_parser.cc > CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/test/test_parser.cc > CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.i
 
 CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_20401892_20401901-main/kiraz/test/test_parser.cc -o CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/kiraz/test/test_parser.cc -o CMakeFiles/test_parser.dir/kiraz/test/test_parser.cc.s
 
 # Object files for target test_parser
 test_parser_OBJECTS = \
@@ -100,9 +100,9 @@ test_parser: lib/libgtest_main.a
 test_parser: /usr/lib/x86_64-linux-gnu/libfl.so
 test_parser: lib/libgtest.a
 test_parser: CMakeFiles/test_parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_parser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_parser.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=test_parser -D TEST_EXECUTABLE=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/test_parser -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_parser_TESTS -D CTEST_FILE=/home/semih/Masaüstü/kiraz_20401892_20401901-main/build/test_parser[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=test_parser -D TEST_EXECUTABLE=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/test_parser -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=test_parser_TESTS -D CTEST_FILE=/home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/test_parser[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/test_parser.dir/build: test_parser
@@ -113,6 +113,6 @@ CMakeFiles/test_parser.dir/clean:
 .PHONY : CMakeFiles/test_parser.dir/clean
 
 CMakeFiles/test_parser.dir/depend:
-	cd /home/semih/Masaüstü/kiraz_20401892_20401901-main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/semih/Masaüstü/kiraz_20401892_20401901-main /home/semih/Masaüstü/kiraz_20401892_20401901-main /home/semih/Masaüstü/kiraz_20401892_20401901-main/build /home/semih/Masaüstü/kiraz_20401892_20401901-main/build /home/semih/Masaüstü/kiraz_20401892_20401901-main/build/CMakeFiles/test_parser.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3 /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build /home/semih/Masaüstü/kiraz_compiler3/kiraz-compiler-mainCompiler-3/build/CMakeFiles/test_parser.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_parser.dir/depend
 

@@ -23,7 +23,6 @@ public:
     static auto New(Args &&...args) {
         return std::make_shared<T>(std::forward<Args>(args)...);
     }
-
     static int colno;
 
     virtual int get_id() const { return m_id; }
