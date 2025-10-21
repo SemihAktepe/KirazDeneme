@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_semantics.dir/kiraz/test/test_semantics.cc.o -o test_semantics  libkiraz.a lib/libgtest_main.a /usr/lib/x86_64-linux-gnu/libfl.so lib/libgtest.a 
