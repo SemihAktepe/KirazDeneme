@@ -16,28 +16,9 @@ alabileyim.
 
 #include <kiraz/ast/Operator.h>
 #include <kiraz/ast/Literal.h>
-#include <kiraz/ast/KwLet.h>
-#include <kiraz/ast/KwImport.h>
-#include <kiraz/ast/KwIfElse.h>
-#include <kiraz/ast/KwClass.h>
-#include <kiraz/ast/Id.h>
-#include <kiraz/ast/KwWhile.h>
-#include <kiraz/ast/Call.h>
-#include <kiraz/ast/Return.h>
-#include <kiraz/token/Id.h>
-#include <kiraz/token/KwLet.h>
-#include <kiraz/token/KwImport.h>
-#include <kiraz/token/KwIf.h>
-#include <kiraz/token/KwElse.h>
-#include <kiraz/token/KwWhile.h>
-#include <kiraz/token/Return.h>
-#include <kiraz/token/Func.h>
-#include <kiraz/ast/Func.h>
-#include <kiraz/ast/Arg.h>
-#include <kiraz/ast/Module.h>
-#include <kiraz/token/Operator.h>
-#include <kiraz/token/KwClass.h>
 
+
+#include <kiraz/token/Operator.h>
 #include <kiraz/token/Literal.h>
 
 int yyerror(const char *msg);

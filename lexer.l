@@ -7,15 +7,8 @@
 #include "main.h"
 #include <kiraz/token/Literal.h>
 #include <kiraz/token/Operator.h>
-#include <kiraz/token/Id.h>
-#include <kiraz/token/KwLet.h>
-#include <kiraz/token/Func.h>
-#include <kiraz/token/KwImport.h>
-#include <kiraz/token/KwIf.h>
-#include <kiraz/token/KwElse.h>
-#include <kiraz/token/KwClass.h>
-#include <kiraz/token/KwWhile.h>
-#include <kiraz/token/Return.h>
+
+
 #include <algorithm>
 #include <string>
 static auto &colno = Token::colno;
